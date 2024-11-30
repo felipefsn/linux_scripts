@@ -1,0 +1,83 @@
+TAILSCALE
+
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+sudo apt update
+sudo apt install tailscale
+sudo tailscale up
+
+DOCKER
+
+sudo touch docker-volume.img
+sudo chattr +C docker-volume.img
+lsattr /media
+sudo dd if=/dev/zero of=/media/docker-volume.img bs=4M count=4000
+lsattr /media
+sudo mkfs.ext4 docker-volume.img 
+sudo mkdir /var/lib/docker
+sudo mount -o loop -t ext4 /media/docker-volume.img /var/lib/docker
+df -h
+sudo umount /var/lib/docker 
+
+
+sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt install ca-certificates curl gnupg lsb-release
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+docker volume create portainer_data
+docker run hello-world
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
+    --restart=always \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v portainer_data:/data \
+    portainer/portainer-ce:2.9.3
+
+sudo apt install docker-compose
+
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+
+
+sudo mkdir /btrfs_pool
+sudo mkdir /btrfs_storage
+sudo mkdir /btrfs_backup
+# edit fstab
+sudo mount -av
+
+
+sudo btrfs subvolume snapshot -r /btrfs_pool/@docker /btrfs_backup/@docker_220903
+sudo btrfs send /btrfs_backup/@docker_220903 | sudo btrfs receive /mnt/
+sudo btrfs subvolume snapshot /mnt/@docker_220903/ /mnt/@docker
+
+
+
+
+## FSTAB
+
+PARTUUID=b7e0ec15-a48a-4ced-a7af-d7b6dd884aa0	/boot/efi	vfat	umask=0077	0  0
+PARTUUID=b6960705-68f0-4d81-980b-6ee4e3ad5756	/recovery	vfat	umask=0077	0  0
+
+## SSD 480Gb
+UUID=7c64c6ba-12c8-4c4e-9349-10dcc4931a0b	/btrfs_pool		btrfs	defaults,ssd,noatime,space_cache,commit=120,compress=zstd,discard=async,subvolid=5	0  0
+UUID=7c64c6ba-12c8-4c4e-9349-10dcc4931a0b	/			btrfs	defaults,subvol=@,ssd,noatime,space_cache,commit=120,compress=zstd,discard=async	0  0
+UUID=7c64c6ba-12c8-4c4e-9349-10dcc4931a0b	/home			btrfs   defaults,subvol=@home,ssd,noatime,space_cache,commit=120,compress=zstd,discard=async	0  0
+UUID=7c64c6ba-12c8-4c4e-9349-10dcc4931a0b	/swap		        btrfs   defaults,subvol=@swap,compress=no  0  0
+/swap/swapfile					none			swap	defaults	0  0
+
+## HDD 500Gb
+UUID=d2a569b5-2f52-4a09-8186-5975b498ced6	/btrfs_storage		btrfs	defaults,noatime,space_cache,commit=120,compress=zstd,subvolid=5,x-systemd.after=/	0  0
+UUID=d2a569b5-2f52-4a09-8186-5975b498ced6	/home/felipe/Docker	btrfs   defaults,subvol=@docker,noatime,space_cache,commit=120,compress=zstd,x-systemd.after=/	0  0
+UUID=d2a569b5-2f52-4a09-8186-5975b498ced6	/home/felipe/Seafile	btrfs   defaults,subvol=@seafile,noatime,space_cache,commit=120,compress=zstd,x-systemd.after=/	0  0
+
+
+## Docker folder
+/media/docker-volume.img			/var/lib/docker	ext4	defaults,discard,x-systemd.after=/	0  0
+
+
+

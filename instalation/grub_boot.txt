@@ -1,0 +1,13 @@
+set prefix=(hd0,gptX)/boot/grub
+set root=(hd0,gltX)
+insmod linux
+insmod normal
+normal
+
+#Grub pop_os
+https://jacci.net/linux/pop-os/how-to-install-grub-on-pop-os-20-04/
+
+
+sudo cp /boot/grub/x86_64-efi/grub.efi /boot/efi/EFI/pop/grubx64.efi
+/boot/efi/EFI/pop/grub.cfg
+

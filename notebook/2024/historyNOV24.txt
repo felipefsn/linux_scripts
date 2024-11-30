@@ -1,0 +1,995 @@
+  503  busybox basename /sys/block/mmcblk0/mmcblk0p1
+  504  echo busybox basename /sys/block/mmcblk0/mmcblk0p1
+  505  sudo update-initramfs -c -k all
+  506  cd /usr/local/sbin/
+  507  sudo gedit crypto-usb-key.sh
+  508  history | grep power
+  509  sudo powertop
+  510  ifconfig
+  511  history | grep sensor
+  512  sudo sensors-setect
+  513  sudo sensors-detect
+  514  lmsensors
+  515  lm-sensors
+  516  sudo sensors
+  517  sudo nala install lm-sensors
+  518  flatpak install flathub org.inkscape.Inkscape
+  519  sudo nala list --upgradable
+  520  nala -h
+  521  sudo nala autoremove
+  522  sudo nala autoclean
+  523  sudo nala clean
+  524  sudo nala history
+  525  sudo powertop
+  526  sudo btrfs device status /dev/sda3
+  527  sudo btrfs device stats /dev/sda3
+  528  sudo btrfs device stats /dev/mapper/data_vda-root 
+  529  sudo btrfs device stats /dev/mapper/data_vdb-root 
+  530  sudo btrfs scrub status /dev/mapper/data_vdb-root 
+  531  sudo btrfs scrub status /dev/mapper/data_vda-root 
+  532  sudo btrfs device stats /dev/mapper/data_vda-root 
+  533  sudo btrfs scrub status /dev/mapper/data_vdb-root 
+  534  sudo btrfs device stats /dev/mapper/data_vdb-root 
+  535  cd /usr/bin
+  536  ls
+  537  ls *.sh
+  538  conda env list
+  539  history | grep jupyter
+  540  conda activate /home/felipe/TEMP/python_chatGPT/.conda
+  541  pip install --upgrade pip
+  542  pip install setuptools
+  543  pip install git+https://github.com/mmabrouk/chatgpt-wrapper
+  544  playwright install firefox
+  545  chatgpt install
+  546  chatgpt
+  547  chatgpt install
+  548  pip isntall openai
+  549  pip install openai
+  550  conda install jupyter-lab
+  551  conda install jupyterlab
+  552  pip install chardet
+  553  pip install openai[embeddings]
+  554  pip install cchardet
+  555  pip remove chardet
+  556  pip uninstall chardet
+  557  pip install autopep8==1.6.0
+  558  certifi==2021.10.8
+  559  charset-normalizer==2.0.7
+  560  click==8.0.3
+  561  et-xmlfile==1.1.0
+  562  Flask==2.0.2
+  563  idna==3.3
+  564  itsdangerous==2.0.1
+  565  Jinja2==3.0.2
+  566  MarkupSafe==2.0.1
+  567  numpy==1.21.3
+  568  openai==0.19.0
+  569  openpyxl==3.0.9
+  570  pandas==1.3.4
+  571  pandas-stubs==1.2.0.35
+  572  pycodestyle==2.8.0
+  573  python-dateutil==2.8.2
+  574  python-dotenv==0.19.2
+  575  pytz==2021.3
+  576  requests==2.26.0
+  577  six==1.16.0
+  578  toml==0.10.2
+  579  tqdm==4.62.3
+  580  urllib3==1.26.7
+  581  Werkzeug==2.0.2
+  582  pip install new_document.txt 
+  583  pip install -r new_document.txt 
+  589  openai api engines.list
+  590  pip install --upgrade openai
+  591  sudo powertop
+  592  flatpak install --user https://flathub.org/repo/appstream/xyz.rescribe.rescribe.flatpakref
+  593  flatpak remove --user https://flathub.org/repo/appstream/xyz.rescribe.rescribe.flatpakref
+  594  flatpak uninstall xyz.rescribe.rescribe
+  595  cd /media/felipe/Elements/
+  596  restic -h
+  597  restic snapshots 
+  598  restic snapshots -r sea-repo/
+  599  restic ls e1d326df -r sea-repo/ 
+  600  restic
+  601  sudo nala isntall restic
+  602  sudo nala install restic
+  603  cd /media/felipe/Elements/
+  604  ls
+  605  cat mount_restic.sh 
+  606  sh mount_restic.sh 
+  607  sudo nala install alacarte
+  608  sudo nala install appimagelauncher
+  609  history | grep docker
+  610  docker
+  611  docker list
+  612  ln -h
+  613  ln --help
+  614  history | grep ln
+  615  ln -s ~/Idiomas/lwt/media ~/.docker/lwt/lwt_html/media
+  616  docker stats
+  617  docker rm lwt_lwt_1 
+  618  docker rm lwt_db_1 
+  619  docker stats
+  620  docker-compose build lwt 
+  621  docker-compose up lwt
+  622  ssh 192.168.1.40
+  623  history | grep youtube
+  624  history | grep y
+  625  history | grep nala
+  626  pip install yp-dlp
+  627  pip install yt-dlp
+  628  yt-dlp https://www.youtube.com/watch?v=tZRD0BwqS48
+  629  history | grep btrfs
+  630  sudo btrfs scrub status /dev/mapper/data_vda-root
+  631  sudo btrfs scrub status /dev/mapper/data_vdb-root
+  632  sudo btrfs device status /dev/mapper/data_vda-root
+  633  sudo btrfs device stats /dev/mapper/data_vda-root
+  634  sudo btrfs device stats /dev/mapper/data_vdb-root
+  635  sudo nala install ibus ibus-mozc mozc-utils-gui
+  636  ibus-setup
+  637  ibus-setup
+  638  cd Videos/
+  639  ls
+  640  yt-dlp https://www.youtube.com/watch?v=tZRD0BwqS48
+  641  ls
+  642  ibus-setup
+  643  yt-dlp https://www.youtube.com/watch?v=tZRD0BwqS48
+  644  yt-dlp https://www.youtube.com/watch?v=mBI8Tf40-3U
+  645  yt-dlp --help
+  646  yt-dlp -N 5 https://www.youtube.com/watch?v=mBI8Tf40-3U
+  647  history | grep upower
+  648  history | grep UPower
+  649  sudo micro /etc/UPower/UPower.conf 
+  650  sudo btrfs scrub status /dev/mapper/data_vda-root
+  651  sudo btrfs device status /dev/mapper/data_vda-root
+  652  sudo btrfs device stats /dev/mapper/data_vda-root
+  653  sudo btrfs device stats /dev/mapper/data_vdb-root
+  654  sudo nala install transmission
+  655  tailcale status
+  656  tailcale stats
+  657  tailscale stats
+  658  tailscale status
+  659  tailscale status
+  660  history | grep unsplash
+  661  history | grep bulk
+  662  cd Pictures/
+  663  ls
+  664  cd wallpapers/
+  665  ls
+  666  bulksplash
+  667  dmesg
+  668  sudo dmesg
+  669  cd TEMP/
+  670  ls
+  671  mkdrid catecismo
+  672  mkdir catecismo
+  673  cd catecismo/
+  674  httrack https://www.vatican.va/archive/cathechism_po/index_new/prima-pagina-cic_po.html -a -v -I0
+  675  sudo nala install httrack
+  676  httrack https://www.vatican.va/archive/cathechism_po/index_new/prima-pagina-cic_po.html -a -v -I0
+  677  sudo powertop
+  678  pandoc
+  679  ifconfig
+  680  ip -a
+  681  ip a
+  682  sudo tailscale status
+  683  docker
+  684  docker stats
+  685  sudo nautilus
+  686  nano /etc/fstab 
+  687  history | grep mount
+  688  sudo mount -o defaults,ssd,noatime,space_cache,commit=120,compress-zstd,subvolid=5 /dev/data_vda /mnt
+  689  sudo mount -av
+  690  mkdir /btrfs_pool
+  691  sudo mkdir /btrfs_pool
+  692  ls /
+  693  cat /etc/fstab 
+  694  micro /etc/fstab 
+  695  sudo micro /etc/fstab 
+  696  sudo watch btrfs device stats /dev/mapper/data_vdb-root 
+  697  history | grep btrfs
+  698  sudo watch btrfs scrup status /dev/mapper/data_vda-root
+  699  sudo watch btrfs scrub status /dev/mapper/data_vda-root
+  700  sudo watch btrfs device stats /dev/mapper/data_vda-root
+  701  sudo watch btrfs device stats /dev/mapper/data_vdb-root 
+  702  sudo nala install fonts-ipafont-mincho
+  703  sudo watch btrfs device stats /dev/mapper/data_vda-root
+  704  sudo watch btrfs device stats /dev/mapper/data_vdb-root 
+  705  sudo watch btrfs device stats /dev/mapper/data_vda-root
+  706  sudo nala install sumatrapdf
+  707  sudo nala install sumatra-pdf
+  708  sudo nala install sumatra
+  709  sudo nala remove sumatra
+  710  sudo nala history
+  711  nala help
+  712  nala history help
+  713  sudo nala history undo 34
+  714  sudo nala install mupdf
+  715  sudo nala install playonlinux winbind 
+  716  sudo watch btrfs device stats /dev/mapper/data_vda-root
+  717  sudo watch btrfs device stats /dev/mapper/data_vdb-root
+  718  cd Downloads/
+  719  unzip -p www.mysoftwarefree.com ./
+  720  history | grep unzip
+  721  history | grep zip
+  722  pip install dtrx
+  723  dtrx Microsoft\ Office\ 2013\ -\ www.MySoftwareFree.com.7z 
+  724  sudo nala install playonlinux winbind 
+  725  brewtarget
+  726  history | grep para
+  727  echo cerv_urls | xargs -n 1 -P 10 wget -q
+  728  echo $cerv_urls | xargs -n 1 -P 10 wget -q
+  729  echo cerv_urls.txt | xargs -n 1 -P 10 wget -q
+  730  sudo apt install parallels
+  731  sudo apt install parallel
+  732  cat cerv_urls.txt | parallel --gnu "wget {}"
+  733  conda env list
+  734  cat beerxml_list.txt | parallel --gnu "wget {}"
+  735  conda activate /home/felipe/TEMP/cerv-recipe/.conda
+  736  pip install pybeerxml
+  737  python
+  738  conda install ipykernel --update-depsp --force-install
+  739  conda install ipykernel --update-deps --force-install
+  740  conda install ipykernel --update-deps --force-reinstall
+  741  conda install -p /home/felipe/TEMP/cerv-recipe/.conda ipykernel --update-deps --force-reinstall
+  742  pip install ipykernel
+  743  conda activate /home/felipe/TEMP/cerv-recipe/.conda
+  744  pip install pandas
+  745  conda activate /home/felipe/TEMP/cerv-recipe/.conda
+  746  pip install matplotlib sklearn pyDOE scipy pylab seaborn
+  747  pip install matplotlib
+  748  pip install sklearn
+  749  pip install pyDOE
+  750  pip install pyla
+  751  pip install pylab
+  752  pip install seaborn
+  753  pip install scikit-learn
+  754  pip install xlwt
+  755  sudo nala install teams-for-linux
+  756  sudo snap install teams
+  757  flatpak install flathub com.github.IsmaelMartinez.teams_for_linux
+  758  history | grep ssh
+  759  ssh 100.82.172.52
+  760  sudo tailscale up
+  761  sudo tailscale status
+  762  ssh 100.82.172.52
+  763  sudo tailscale status
+  764  ssh 100.82.172.52
+  765  sudo tailscale status
+  766  ssh 100.82.172.52
+  767  ssh simone@100.82.172.52
+  768  ssh 100.82.172.52
+  769  pt-get install pandoc pandoc-citeproc texlive
+  770  sudo nala install pandoc pandoc-citeproc texlive
+  771  cd Documents/pessoais/curriculos/latex/resume4/aux/
+  772  ls
+  773  cd ..
+  774  ls
+  775  pandoc -s resume.tex -o temp.docx
+  776  tailscale status
+  777  ssh 100.82.172.52
+  778  conda list
+  779  conda env list
+  780  python --version
+  781  conda env list
+  782  conda activate /home/felipe/TEMP/cerv-recipe/.conda
+  783  pip install pandas
+  784  python
+  785  tailscale status
+  786  ssh 100.82.172.52
+  787  tailscale status
+  788  ssh 100.82.172.52
+  789  nada search pdfreflow
+  790  nala search pdfreflow
+  791  cd Downloads/pdfreflow-0.8.6/
+  792  ./configure 
+  793  make
+  794  cd ~/Livros/avulsos/igreja/
+  795  ls
+  796  pdftohtml -xml CONQUISTA-DAS-VIRTUDES.pdf 
+  797  pdfreflow
+  798  pdfreflow CONQUISTA-DAS-VIRTUDES.xml
+  799  ~/Downloads/pdfreflow-0.8.6/src/pdfreflow CONQUISTA-DAS-VIRTUDES.xml
+  800  ~/Downloads/pdfreflow-0.8.6/src/pdfreflow --ragright CONQUISTA-DAS-VIRTUDES.xml
+  801  ssh 100.82.172.52
+  802  ssms
+  803  sudo nala install dbeaver
+  804  flatpak install flathub io.dbeaver.DBeaverCommunity
+  805  sudo nala install pulseaudio
+  806  sudo nala install pavucontrol
+  807  sudo powertop
+  808  flatpak install flathub io.dbeaver.DBeaverCommunity
+  809  conda activate /home/felipe/Cursos/CCDD/.conda
+  810  pip install numpy pandas pyarrow
+  811  sudo watch btrfs device stats /dev/mapper/data_vdb-root
+  812  sudo watch btrfs device stats /dev/mapper/data_vda-root
+  813  ssh 100.82.172.52
+  814  ip -a
+  815  ip a
+  816  tailscale status
+  817  ssh 100.82.172.52
+  818  ssh 100.82.172.52
+  819  sudo nala install gnome-clocks
+  820  history | grep watch
+  821  watch upower -i /org/freedesktop/UPower/devices/battery_BAT0
+  822  ssh 100.82.172.52
+  823  history | grep yt
+  824  cd Music/
+  825  ls
+  826  mkdir "cancoes galego portugues"
+  827  cd cancoes\ galego\ portugues/
+  828  yt-dlp -h
+  829  yt-dlp -N 5 https://www.youtube.com/playlist?list=PLnXrC2Q5ODrr9VfRGyC9q7yFWQZOGUAy4]
+  830  yt-dlp -N 5 https://www.youtube.com/playlist?list=PLnXrC2Q5ODrr9VfRGyC9q7yFWQZOGUAy4
+  831  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 https://www.youtube.com/playlist?list=PLnXrC2Q5ODrr9VfRGyC9q7yFWQZOGUAy4
+  832  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 https://www.youtube.com/playlist?list=PLXqdrHz6Q7SXeCcAnJdpAumY-zCJRtyZB
+  833  cd ../cantigas\ do\ camino/
+  834  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 https://www.youtube.com/watch?v=mZ78K5u4EYA
+  835  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 https://www.youtube.com/watch?v=_jyK5egEQMI&list=OLAK5uy_nhl_aJ3ZoIm__b-lcYNVR_4K5LGAT11Wg
+  836  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 https://www.youtube.com/playlist?list=OLAK5uy_nhl_aJ3ZoIm__b-lcYNVR_4K5LGAT11Wg
+  837  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 --download-archive https://www.youtube.com/playlist?list=OLAK5uy_nhl_aJ3ZoIm__b-lcYNVR_4K5LGAT11Wg
+  838  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 --download-archive URL https://www.youtube.com/playlist?list=OLAK5uy_nhl_aJ3ZoIm__b-lcYNVR_4K5LGAT11Wg
+  839  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 --download-archive URL https://www.youtube.com/watch?v=rtQIfe1kyJc
+  840  flatpack list
+  841  flatpak list
+  842  flatpak update
+  843  grep "sleep" .
+  844  grep "sleep" ./
+  845  grep "sleep" *.py
+  846  grep "sleep" service/*.py
+  847  grep "30" service/*.py
+  848  grep "30" *.py
+  849  grep "sleep" gui/*.py
+  850  grep -R "sleep" *.py
+  851  grep -r "sleep" *.py
+  852  grep -r "sleep" ./
+  853  conda activate language
+  854  pip install spacy
+  855  python -m spacy download ja_core_news_sm
+  856  wget https://d1.islamhouse.com/data/ar/ih_books/chain_01/Lessons_in_Arabic_Language/ar_02_Lessons_in_Arabic_Language.pdf
+  857  wget https://d1.islamhouse.com/data/ar/ih_books/chain_01/Lessons_in_Arabic_Language/ar_03_Lessons_in_Arabic_Language.pdf
+  858  cd Downloads/
+  859  wget https://d1.islamhouse.com/data/ar/ih_books/chain_01/Lessons_in_Arabic_Language/ar_01_Lessons_in_Arabic_Language.pdf
+  860  wget http://62.182.86.140/main/2237000/02a21fd49e1fdae919cdb06e2e3481b0/%28Palgrave%20Master%20Series%20%28Languages%29%29%20Jane%20Wightwick%2C%20Mahmoud%20Gaafar%20-%20Mastering%20Arabic%201-Palgrave%20%282014%29.pdf
+  861  history | grep ocr
+  862  sudo nala install xournal
+  863  sudo nala install xournalpp
+  864  tailscale status
+  865  sudo tailscale up
+  866  tailscale status
+  867  ip -a
+  868  ip a
+  869  ifconfig
+  870  sudo snap install blue-recorder
+  871  flatpak install flathub sa.sy.bluerecorder
+  872  wget https://musescore.com/static/musescore/scoredata/g/3191508c10bcc7792f73cfd6105f55b496df3b86/score_0.svg
+  873  sudo nala install fuse2
+  874  sudo nala install libfuse2
+  875  chmod a+x LibreScore.AppImage 
+  876  flatpak install flathub org.musescore.MuseScore
+  877  cd Downloads/
+  878  wget https://musescore.com/static/musescore/scoredata/g/847881e037bfe93bb3c18c5f95761f6d4bfe944c/score_0.png
+  879  tailscale
+  880  tailscale status
+  881  flatpak install flathub org.openshot.OpenShot
+  882  ifconfig
+  883  cd /home/felipe
+  884  docker run --rm -it -v     "/home/felipe/Cursos/coursera_down:/courses"     courseradl/courseradl -u "160027951@aluno.unb.br" -p "felipe24121998" learn-chinese-mandarin
+  885  docker run --rm -it -v     "/home/felipe/Cursos/coursera_down:/courses"     courseradl/courseradl -u "160027951@aluno.unb.br" -p "felipe24121998" -ca 16wpXK1hAQcjT203oFyN0BV4tD_maweSL-FpsQDhokqlJt0Q9UxZDSBq0BJUk3ympSMtfJOxG_HUOOnMDAw9sg.ja2aJroeJeT23151tosifQ.dkq3mqfL9YzaOqiNKk7KAblLbMLbPUEby_nxSiEtra7Z9ObWESae0Qoj8wo1vevfVFAerpmvvg84Y7qOWbAC4RCwglTOFjV8IL2_W3zqJhqyJQgIA2oJf_yg9HD52ayYYXmWz32iYuWpS8qa76cnboZ_Z2LeLuUrdq8R3VIbBsdQ4Xv4nC2yOfzppPKOuBgBgnlZtB5VaLQA6ft40tI4hAyaceDveUokEGroLtnZbgErqenfcReUahTD0wrGcpWPN_YLd08y2NSdoxXI2aN-zdzhYGOCWAwoJFxdydiW525GTtrAm1jXvc2L3vRJ3CxipuGL6bXaZDcSYSVKNlCIHY0MKBGWfn0TYYpj5hvdCt8pQX0X6X0Cyy2ppidEdh_-8u28GW-YeqV9RP3_9B3m7eEPNzpDYquVqdHdVusmimW2lsOtW4vT_J-bySWdr_G8 learn-chinese-mandarin
+  886  docker run --rm -it -v     "/home/felipe/Cursos/coursera_down:/courses"     courseradl/courseradl -u "160027951@aluno.unb.br" -p "felipe24121998" -ca ~/ca.txt learn-chinese-mandarin
+  887  docker run --rm -it -v     "/home/felipe/Cursos/coursera_down:/courses"     courseradl/courseradl -u "160027951@aluno.unb.br" -p "felipe24121998" -ca '16wpXK1hAQcjT203oFyN0BV4tD_maweSL-FpsQDhokqlJt0Q9UxZDSBq0BJUk3ympSMtfJOxG_HUOOnMDAw9sg.ja2aJroeJeT23151tosifQ.dkq3mqfL9YzaOqiNKk7KAblLbMLbPUEby_nxSiEtra7Z9ObWESae0Qoj8wo1vevfVFAerpmvvg84Y7qOWbAC4RCwglTOFjV8IL2_W3zqJhqyJQgIA2oJf_yg9HD52ayYYXmWz32iYuWpS8qa76cnboZ_Z2LeLuUrdq8R3VIbBsdQ4Xv4nC2yOfzppPKOuBgBgnlZtB5VaLQA6ft40tI4hAyaceDveUokEGroLtnZbgErqenfcReUahTD0wrGcpWPN_YLd08y2NSdoxXI2aN-zdzhYGOCWAwoJFxdydiW525GTtrAm1jXvc2L3vRJ3CxipuGL6bXaZDcSYSVKNlCIHY0MKBGWfn0TYYpj5hvdCt8pQX0X6X0Cyy2ppidEdh_-8u28GW-YeqV9RP3_9B3m7eEPNzpDYquVqdHdVusmimW2lsOtW4vT_J-bySWdr_G8' learn-chinese-mandarin
+  888  conda list
+  889  conda env list
+  890  conda activate language
+  891  pip install coursera-dl
+  892  coursera-dl learn-chinese-mandarin
+  893  git clone https://github.com/raffaem/cs-dlp
+  894  pip install --user ./cs-dlp/.
+  895  cs-dlp --cauth-auto chrome learn-chinese-mandarin
+  896  cs-dlp --cauth-auto chrome learn-chinese
+  897  cd TEMP/
+  898  ls
+  899  git clone https://github.com/b5i/apple-playlist-downloader
+  900  cd apple-playlist-downloader/
+  901  cd ..
+  902  npm i -g apple-playlist-downloader
+  903  git clone https://github.com/Shubhamrawat5/apple-playlist-downloader.git
+  904  rm -r apple-playlist-downloader/
+  905  rm -r apple-playlist-downloader
+  906  ls
+  907  sudo rm -r apple-playlist-downloader
+  908  git clone https://github.com/Shubhamrawat5/apple-playlist-downloader.git
+  909  cd apple-playlist-downloader/
+  910  npm install
+  911  npm start
+  912  lame
+  913  sudo nala install lame
+  914  gsettings set org.gnome.desktop.remote-desktop.rdp screen-share-mode extend
+  915  ifconfig
+  916  sudo tailscale up
+  917  sudo tailscale status
+  918  ping 192.168.1.33
+  919  conda env list
+  920  conda ~/felipe/TEMP/cerv-recipe/.conda activate
+  921  conda -h
+  922  conda env -h
+  923  conda activate
+  924  conda language activate
+  925  conda
+  926  conda activate language
+  927  conda activate ~/felipe/TEMP/cerv-recipe/.conda
+  928  conda activate ~/felipe/TEMP/cerv-recipe/
+  929  conda activate ~/TEMP/cerv-recipe/.conda/
+  930  python ./download_raibow.py 
+  931  pip install requests beautifulsoup4
+  932  python ./download_raibow.py 
+  933  python download_raibow.py 
+  934  python
+  935  python download_raibow.py 
+  936  flatpak install flathub io.dbeaver.DBeaverCommunity
+  937  sudo nala install winbind
+  938  curl -F 'files[]=@Plotter_License.mde' https://www.rebasedata.com/api/v1/convert?outputFormat=csv -o output.zip
+  939  curl -F 'files[]=@Plotter_License.mde' https://www.rebasedata.com/api/v1/convert?outputFormat=mdb -o output.zip
+  940  unzip -h
+  941  unzip output.zip 
+  942  unzip output.zip
+  943  unzip output
+  944  unzip output.zip
+  945  curl -F 'files[]=@Plotter_License.mde' https://www.rebasedata.com/api/v1/convert?outputFormat=mdb -o output.mdb
+  946  ifconfig
+  947  sudo tailscale status
+  948  sudo apt install synaptic
+  949  sudo apt update
+  950  sudo apt --upgrade
+  951  sudo apt upgrade
+  952  sudo aptp --fux-broken
+  953  sudo aptp --fix-broken
+  954  sudo apt --fix-broken
+  955  sudo apt --fix-broken install
+  956  sudo apt upgrade
+  957  python ./download_raibow.py 
+  958  conda activate languages
+  959  conda activate language
+  960  python ./download_raibow.py 
+  961  sudo nala install gnucash
+  962  sudo nala remove gnucash
+  963  history | grep lwt
+  964  cd .docker
+  965  git clone --depth 1 -b main https://github.com/bigcapitalhq/bigcapital.git && cd ./bigcapital
+  966  ls
+  967  cp .env.example .env && nano .env
+  968  docker-compose --file docker-compose.prod.yml up -d
+  969  nano docker-compose.prod.yml 
+  970  nano docker-compose.prod.yml 
+  971  docker-compose --file docker-compose.prod.yml up -d --verbose
+  972  docker-compose --file docker-compose.prod.yml up -d
+  973  ls /var/
+  974  cd .docker
+  975  ls
+  976  git clone https://github.com/akaunting/docker
+  977  ls
+  978  cd docker/
+  979  ls
+  980  cd ..
+  981  mv -r ./docker ./akauting
+  982  mv ./docker ./akauting
+  983  ls
+  984  cd akauting/
+  985  ls
+  986  cp env/db.env.example env/db.env
+  987  micro env/db.env
+  988  cp env/run.env.example env/run.env
+  989  micro env/run.env
+  990  AKAUNTING_SETUP=true docker-compose up -d
+  991  docker-compose down
+  992  micro env/db.env
+  993  docker-compose up -d
+  994  docker-compose down
+  995  docker-compose up -d
+  996  docker-compose -f fpm-docker-compose.yml -f fpm-alpine-docker-compose.yml up --build
+  997  docker-compose up -d
+  998  docker 
+  999  docker ps
+ 1000  docker-compose down
+ 1001  docker ps
+ 1002  docker-compose -h
+ 1003  docker-compose ps
+ 1004  AKAUNTING_SETUP=true docker-compose up -d
+ 1005  docker-compose down
+ 1006  docker-compose up --build
+ 1007  cd ..
+ 1008  rm -r akauting/
+ 1009  ls
+ 1010  sudo rm -r akauting/
+ 1011  ls
+ 1012  git clone https://github.com/akaunting/docker
+ 1013  cd docker
+ 1014  cp env/db.env.example env/db.env
+ 1015  vi env/db.env # and set things
+ 1016  cp env/run.env.example env/run.env
+ 1017  vi env/run.env # and set things
+ 1018  AKAUNTING_SETUP=true docker-compose up -d
+ 1019  cd ..
+ 1020  sudo rm -r docker/
+ 1021  çs
+ 1022  ls
+ 1023  git clone https://github.com/akaunting/docker
+ 1024  cd akaunting/
+ 1025  cp env/db.env.example env/db.env
+ 1026  cp env/run.env.example env/run.env
+ 1027  AKAUNTING_SETUP=true docker-compose up -d
+ 1028  bash ./kuralab_akauting.sh 
+ 1029  sudo rm -r config
+ 1030  sudo rm -r logs
+ 1031  sudo rm -r mysql
+ 1032  bash ./kuralab_akauting.sh 
+ 1033  sudo rm -r mysql
+ 1034  sudo rm -r config
+ 1035  bash ./kuralab_akauting.sh 
+ 1036  sudo rm -r config
+ 1037  sudo rm -r mysql
+ 1038  sudo rm -r config
+ 1039  sudo rm -r mysql
+ 1040  conda env list
+ 1041  conda activate finance
+ 1042  pip install beancount fava
+ 1043  beancount
+ 1044  ls
+ 1045  where beancount
+ 1046  where fava
+ 1047  echo $beancount
+ 1048  $beancount
+ 1049  beancouont
+ 1050  beancount
+ 1051  fava
+ 1052  bean
+ 1053  bean-check
+ 1054  bean-web
+ 1055  cd .docker/bean/ 
+ 1056  bean-web example.beancount 
+ 1057  fava example.beancount 
+ 1058  echo $path
+ 1059  echo $PATH
+ 1060  conda activate language
+ 1061  echo $PATH
+ 1062  conda activate finance
+ 1063  echo $PATH
+ 1064  bean-web main.bean
+ 1065  conda activate finance
+ 1066  bean-web main.bean
+ 1067  conda activate finance
+ 1068  bean-web main.bean
+ 1069  conda activate finance
+ 1070  /home/felipe/.miniconda3/envs/finance/bin/python /home/felipe/.docker/bean/import_ofx.py
+ 1071  conda activate finance
+ 1072  python import_ofx.py 
+ 1073  bean-check main.bean 
+ 1074  python import_ofx.py 
+ 1075  bean-check main.bean 
+ 1076  python import_ofx.py 
+ 1077  bean-check main.bean 
+ 1078  python import_ofx.py 
+ 1079  n
+ 1080  python import_ofx.py 
+ 1081  python
+ 1082  conda activate finance
+ 1083  python run.py 
+ 1084  bean-format
+ 1085  bean-format -h
+ 1086  bean-report journal.beancount 
+ 1087  bean-web
+ 1088  bean-web journal.beancount 
+ 1089  conda activate finance
+ 1090  pip install beancount-import
+ 1091  python data/import_ofx.py 
+ 1092  python import_ofx.py 
+ 1093  conda activate finance
+ 1094  python import_ofx.py 
+ 1095  history | grep btrfs
+ 1096  sudo btrfs subvolume list /
+ 1097  ls /
+ 1098  history | grep nano
+ 1099  nano /etc/fstab
+ 1100  history | grep tesseract
+ 1101  history | grep ocr
+ 1102  nala search tesseract-ocr
+ 1103  sudo nala install tesseract-ocr-jpn tesseract-ocr-jpn-vert ocrmypdpf
+ 1104  sudo nala install tesseract-ocr-jpn tesseract-ocr-jpn-vert ocrmypdf
+ 1105  cd Idiomas/japonês/livros/tadoku/pdfs/2/
+ 1106  ls
+ 1107  ocrmypdf -l jpn-vert 2-10\ saigo\ no\ ha.pdf teste.pdf
+ 1108  ocrmypdf -l 
+ 1109  ocrmypdf -l jpn_vert 2-10\ saigo\ no\ ha.pdf teste.pdf
+ 1110  ocrmypdf -h
+ 1111  ocrmypdf -l jpn_vert --tesseract-oem 2 2-10\ saigo\ no\ ha.pdf teste.pdf
+ 1112  ocrmypdf -l jpn --tesseract-oem 2 2-10\ saigo\ no\ ha.pdf teste.pdf
+ 1113  history grep crypt
+ 1114  history | grep crypt
+ 1115  history > historyDEC23.txt
+ 1116  ls
+ 1117  micro historyDEC23.txt 
+ 1118  sudo nala install vivaldi
+ 1119  flatpak search vivaldi
+ 1120  flatpak search -
+ 1121  flatpak search -h
+ 1122  flatpak search application vivaldi
+ 1123  flatpak search -h
+ 1124  flatpak search --columns=application vivaldi
+ 1125  makepasswd --chars=12
+ 1126  tailscale
+ 1127  tailscale status
+ 1128  conda ativate language
+ 1129  conda activate language
+ 1130  pip install nhk-easy
+ 1131  micro ~/.bashrc
+ 1132  cd Idiomas/japonês/NHK/easy\ news/
+ 1133  conda activate language
+ 1134  nhk-easy -M -F -H https://www3.nhk.or.jp/news/easy/k10014285871000/k10014285871000.html
+ 1135  nhk-easy -MFH
+ 1136  sudo nala install ffmpeg
+ 1137  ffmpeg -version
+ 1138  nhk-easy -FH
+ 1139  nhk-easy 
+ 1140  nhk-easy -M
+ 1141  nhk-easy -MH
+ 1142  conda activate language
+ 1143  nhk-easy -M
+ 1144  ffmpeg -i "2024-01-01-新しいデザインのお札　「7月3日から使います」.m3u8" "teste.mp3"
+ 1145  sudo nala install audacity
+ 1146  sudo nala install libxcb-xinerama0 libxcb-cursor0
+ 1147  flatpak list
+ 1148  flatpak help
+ 1149  flatpak --help
+ 1150  flatpak update
+ 1151  flatpak update anki
+ 1152  flatpak update net.ankiweb.Anki
+ 1153  ifconfig
+ 1154  ip -a
+ 1155  ip a
+ 1156  if config
+ 1157  ifconfig
+ 1158  conda activate language
+ 1159  pip install nagisa
+ 1160  sh mount_restic.sh 
+ 1161  sudo sh mount_restic.sh 
+ 1162  ./mount_restic.sh 
+ 1163  restic mount -h
+ 1164  restic -r sea-repo/ mount restic_mount/ --allow-other 
+ 1165  sudo restic -r sea-repo/ mount restic_mount/ --allow-other 
+ 1166  sudo nautilus
+ 1167  flatpak update
+ 1168  flatpak install flathub com.google.Chrome
+ 1169  sudo nala update
+ 1170  sudo nala install ca-certificates --reinstall
+ 1171  sudo nala install ca-certificates
+ 1172  sudo apt install ca-certificates --reinstall
+ 1173  sudo nala update
+ 1174  nala -h
+ 1175  micro /etc/apt/sources.list
+ 1176  sudo ala remove protonvpn
+ 1177  sudo nala remove protonvpn
+ 1178  sudo nala update
+ 1179  sudo apt-add-repository -h
+ 1180  sudo apt-add-repository -r https://repo.protonvpn.com/debian
+ 1181  sudo nala update
+ 1182  sudo nala upgrade
+ 1183  sudo nala install ipa-ex-mincho-fonts
+ 1184  sudo nala install fonts-ipaexfont-mincho
+ 1185  sudo nala remove chrome
+ 1186  sudo nala remove google-chrome
+ 1187  nala search chrome
+ 1188  flatpak install flathub com.github.tchx84.Flatseal
+ 1189  conda env list
+ 1190  import torch
+ 1191  python
+ 1192  conda activate /home/felipe/TEMP/cerv-recipe/.conda
+ 1193  python
+ 1194  conda create --name cudatorch --clone /home/felipe/TEMP/cerv-recipe/.conda
+ 1195  conda activate cudatorch
+ 1196  python
+ 1197  pip install TTS
+ 1198  python
+ 1199  cd TEMP/
+ 1200  ls
+ 1201  tts --list_models
+ 1202  tts --list_models | greb ja
+ 1203  tts --list_models | grep ja
+ 1204  tts -h
+ 1205  tts --text jptext.txt --model_name tts_models/ja/kokoro/tacotron2-DDC --vocoder_name vocoder_models/ja/kokoro/hifigan_v1 --output_path speech.wav --use_cuda
+ 1206  tts --text jptext.txt --model_name tts_models/ja/kokoro/tacotron2-DDC --vocoder_name vocoder_models/ja/kokoro/hifigan_v1 --output_path speech.wav --use_cuda TRUE
+ 1207  tts --text jptext.txt --model_name tts_models/ja/kokoro/tacotron2-DDC --vocoder_name vocoder_models/ja/kokoro/hifigan_v1 --out_path speech.wav --use_cuda TRUE
+ 1208  pip install TTS[ja]
+ 1209  tts --text jptext.txt --model_name tts_models/ja/kokoro/tacotron2-DDC --vocoder_name vocoder_models/ja/kokoro/hifigan_v1 --out_path speech.wav --use_cuda TRUE
+ 1210  python
+ 1211  tts --input_file jptext.txt --model_name tts_models/ja/kokoro/tacotron2-DDC --vocoder_name vocoder_models/ja/kokoro/hifigan_v1 --out_path speech.wav --use_cuda TRUED
+ 1212  bash ./runTTS.sh 
+ 1213  cat jptext.txt 
+ 1214  bash ./runTTS.sh 
+ 1215  tts --text "$(cat jptext.txt)" --model_name tts_models/ja/kokoro/tacotron2-DDC --vocoder_name vocoder_models/ja/kokoro/hifigan_v1 --out_path speech.wav --use_cuda TRUE
+ 1216  conda activate torchcuda
+ 1217  conda activate cudatorch
+ 1218  cd TEMP/
+ 1219  sh ./runTTS.sh 
+ 1220  tts --text "$(cat jptext.txt)" --model_name tts_models/ja/kokoro/tacotron2-DDC --vocoder_name vocoder_models/ja/kokoro/hifigan_v1 --out_path speech.wav --use_cuda TRUE
+ 1221  sh ./runTTS.sh 
+ 1222  python --version
+ 1223  cd .var/app/net.ankiweb.Anki/data/Anki2/addons21/
+ 1224  pip install virtualenv
+ 1225  python venv spacyenv
+ 1226  python -m venv spacyenv
+ 1227  source spacyenv/bin/activate
+ 1228  pip install --upgrade pip setuptools wheel
+ 1229  pip install spacy six
+ 1230  python sacy download zh_core_web_sm
+ 1231  python spacy download zh_core_web_sm
+ 1232  spacy download zh_core_web_sm
+ 1233  spacy download jp_core_web_sm
+ 1234  spacy download jp_core_news_sm
+ 1235  spacy download ja_core_web_sm
+ 1236  spacy download ja_core_news_sm
+ 1237  python -m pip install --upgrade pip virtualenv
+ 1238  python -m venv spacyenv
+ 1239  source spacyenv/bin/activate
+ 1240  python -m pip install --upgrade pip setuptools wheel 
+ 1241  python -m pip install --upgrade spacy six
+ 1242  python -m spacy download ja_core_news_sm
+ 1243  python -m spacy download zh_core_web_sm
+ 1244  deactivate
+ 1245  conda env list
+ 1246  conda activate language
+ 1247  python --version
+ 1248  python3.9 -m pip install --upgrade pip virtualenv
+ 1249  python3.9 -m venv spacyenv
+ 1250  source spacyenv/bin/activate
+ 1251  python -m pip install --upgrade pip setuptools wheel
+ 1252  python -m pip install --upgrade spacy six
+ 1253  python -m spacy download ja_core_news_sm
+ 1254  python -m spacy download zh_core_web_sm
+ 1255  python --version
+ 1256  deactivate
+ 1257  systemctl --user restart pulseaudio
+ 1258  systemctl restart pulseaudio
+ 1259  pulseaudio
+ 1260  systemctl --user restart pipewire
+ 1261  flatpak update
+ 1262  sudo nala update
+ 1263  sudo nala upgrade
+ 1264  flatpak update
+ 1265  ifconfig
+ 1266  sudo nala install protonup-qt
+ 1267  flatpak install flathub net.davidotek.pupgui2
+ 1268  mkdir .steam
+ 1269  history | grep cow
+ 1270  chattr +C .steam/
+ 1271  lsattr +C
+ 1272  lsattr
+ 1273  lsattr -a
+ 1274  sudo nala install pandoc
+ 1275  pandoc --from markdown --to epub3 via_cruscis_bento_xvi.md --output book.epub --toc
+ 1276  chmod +x IRPF2024Linux-x86_64v1.1.sh.bin 
+ 1277  bash exec.sh
+ 1278  chmod +x IRPF2024Linux-x86_64v1.1.sh.bin 
+ 1279  ./IRPF2024Linux-x86_64v1.1.sh.bin 
+ 1280  systemctl --user restart pipewire
+ 1281  sudo micro /etc/default/locale
+ 1282  systemctl --user restart pipewire
+ 1283  ifconfig
+ 1284  sudo firewall-cmd --zone=public --permanent --add-port=1716/tcp
+ 1285  sudo ufw allow 1716/udp
+ 1286  sudo ufw allow 1716/tcp
+ 1287  sudo ufw reload
+ 1288  sudo apt update
+ 1289  sudo nala update
+ 1290  sudo nala upgrade
+ 1291  sudo nala install lutris
+ 1292  history | grep shutdown
+ 1293  history grep | shutdown
+ 1294  shutdown -c
+ 1295  shutdown -h
+ 1296  shutdown -c
+ 1297  sudo flatpak update
+ 1298  htop
+ 1299  history grep | pandoc
+ 1300  history | grep pandoc
+ 1301  history | grep vatican
+ 1302  cd TEMP/josemaria/
+ 1303  httrack https://escriva.org/pt-br/camino/ -a -v -I0
+ 1304  httrack -h
+ 1305  httrack https://escriva.org/pt-br/camino/ -a -v -I0
+ 1306  httrack https://escriva.org/pt-br/camino/ -a -v -I0 --connection-per-second=1
+ 1307  httrack https://escriva.org/pt-br/camino/ -a -v -I0 --sockets=1
+ 1308  conda env list
+ 1309  pip install spidy
+ 1310  cd TEMP/arquivo/
+ 1311  ls
+ 1312  spidy https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1313  python3 spidy https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1314  python spidy https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1315  python3 spidy https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1316  python3 spidy-0.2 https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1317  python --version
+ 1318  conda activate base
+ 1319  python --version
+ 1320  python3 spidy-0.2 https://escriva.org/pt-br/camino/ > all_urls.tx
+ 1321  python spidy https://escriva.org/pt-br/camino/ > all_urls.tx
+ 1322  export PATH="$PATH:/path/to/python/bin"
+ 1323  python --version
+ 1324  python spidy https://escriva.org/pt-br/camino/ > all_urls.tx
+ 1325  spidy
+ 1326  python3
+ 1327  pip spidy
+ 1328  pip list | grep spidy
+ 1329  pip list
+ 1330  Spidy https://escriva.org/pt-br/camino/ > all_urls.tx
+ 1331  python Spidy https://escriva.org/pt-br/camino/ > all_urls.tx
+ 1332  echo "export PATH=\"`python3 -m site --user-base`/bin:\$PATH\"" >> ~/.bashrc
+ 1333  source ~/.bashrc
+ 1334  python Spidy https://escriva.org/pt-br/camino/ > all_urls.tx
+ 1335  python3 -m Spidy https://escriva.org/pt-br/camino/ > all_urls.tx
+ 1336  python3 -m spidy https://escriva.org/pt-br/camino/ > all_urls.tx
+ 1337  pip install shell
+ 1338  python3 -m spidy https://escriva.org/pt-br/camino/ > all_urls.tx
+ 1339  python3 -m spidy https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1340  pip install doc_loader
+ 1341  python3 -m spidy https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1342  pip install tag
+ 1343  python3 -m spidy https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1344  pip install xpath
+ 1345  pip install xpath-py
+ 1346  python3 -m spidy https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1347  python3 -m Spidy https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1348  python3 -m spidy https://escriva.org/pt-br/camino/ > all_urls.txt
+ 1349  pip install spidy-web-crawler
+ 1350  pip remove spidy
+ 1351  pip uninstall spidy
+ 1352  pip install spidy-web-crawler
+ 1353  pip install reppy
+ 1354  CC=clang pip install reppy
+ 1355  pip install archivebox
+ 1356  cd TEMP/josemaria/
+ 1357  archivebox init
+ 1358  archivebox server &
+ 1359  cd ..
+ 1360  mkdir arquivo
+ 1361  cd arquivo/
+ 1362  archivebox init
+ 1363  archivebox server &
+ 1364  archivebox manage createsuperuser
+ 1365  archivebox server &
+ 1366  archivebox setup
+ 1367  archivebox server &
+ 1368  systemctl restart pulseaudio
+ 1369  systemctl --user restart pipewire
+ 1370  sudo flatpak update
+ 1371  flatpak anki
+ 1372  flatpak --list
+ 1373  flatpak
+ 1374  flatpak --help
+ 1375  flatpak list
+ 1376  flatpak update anki
+ 1377  flatpak update net.ankiweb.Anki
+ 1378  systemctl --user restart pipewire
+ 1379  sudo flatpak update
+ 1380  history grep | dl
+ 1381  history | grep dl
+ 1382  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 --download-archive URL https://www.youtube.com/playlist?list=PLf8XN5kNFkhfQonvCySTrKEUV742WzshJ
+ 1383  conda env list
+ 1384  cond activate language
+ 1385  conda activate language
+ 1386  history | grep jap
+ 1387  history | grep jp
+ 1388  spacy
+ 1389  spacy -h
+ 1390  spacy --help
+ 1391  spacy info
+ 1392  history | grep spacy
+ 1393  source spacyenv/bin/activae
+ 1394  source spacyenv/bin/activate
+ 1395  history
+ 1396  anki
+ 1397  flatpak run net.ankiweb.Anki -h
+ 1398  flatpak run net.ankiweb.Anki --syncserver
+ 1399  flatpak run net.ankiweb.Anki -p temp
+ 1400  flatpak run net.ankiweb.Anki -p "User 1" --syncserver
+ 1401  flatpak run net.ankiweb.Anki --syncserver "User !"
+ 1402  flatpak run net.ankiweb.Anki --syncserver "User 1"
+ 1403  flatpak run net.ankiweb.Anki -p "User 1" --safemode
+ 1404  sudo nala install chromium-browser
+ 1405  yt-dlp -vU https://cf-embed.play.hotmart.com/embed/4Rzdydg5LV?applicationCode=f57b1bb2-30e3-4fd0-9c59-cfe00909f280&amp;userCode=oODX3LrrOP&amp;jwtToken=eyJhbGciOiJSUzUxMiJ9.eyJlZGl0TWFya2VyIjpmYWxzZSwibmV4dE1lZGlhVGl0bGUiOiIwMDIgLSBBIElOQ0FOU8OBVkVMIEJVU0NBIFBPUiBERVVTICjCpzI2IGEgNDkpIiwiZGVzY3JpcHRpb24iOiJPIGhvbWVtIMOpIGNhcGF6IGRlIERldXMgKMKnIDI3LcKnIDE4NCkgfCAwMDEgLSBQcsOzbG9nbyAtIFBPUiBRVUUgRVNUVURBUiBDQVRFUVVFU0U_ICjCpzEgYSAyNSkiLCJ0aXRsZSI6IlZvbHVtZSAxIC0gSU5UUk9EVcOHw4NPIEUgTyBDUkVETyAowqcwMS0xMDYwKSIsIm1lZGlhQ29kZSI6IjRSemR5ZGc1TFYiLCJ1c2VySWQiOiIzNTM2MDYxOCIsInVzZXJDb2RlIjoib09EWDNMcnJPUCIsInBsYXlEcm0iOmZhbHNlLCJzdWIiOiJmNTdiMWJiMi0zMGUzLTRmZDAtOWM1OS1jZmUwMDkwOWYyODAiLCJleHAiOjE3MjcxMzY1OTgsImlhdCI6MTcyNzA1MDE5OH0.FqXy-JugBj5a1ruXf-WeJkeLYb4Bo7eh6DJ9pI5xo1-ITLYQWKOK7cqsCdFtyFMzolH92OI1mtnFxnMxtWJPE3JixpPhUouOqvylOe-QyI7wXK20pfTxQGkt_9kHByn4KgescYyxMDwNWZZywLcJ8_6QAbRt0sGCEdE4LI7hVN3rmHyCx9WBCmOsnGvehOHhmDPRtM9BRGibsMgivuHJFhQsPjcZj9uy8p5UZKO9WXsoGMe4NctBGa4EWwDqq2GlrBKEhNpteLd7wi4PQ6ZvnMPFeCU4vqCvhYGU5uRtDTzbExhHO0BQQKwprACh7GX8MloxyyU-eVYAKIUyKMwhdQ&amp;user=35360618&amp;autoplay=true&amp;nex=002%20-%20A%20INCANS%C3%81VEL%20BUSCA%20POR%20DEUS%20(%C2%A726%20a%2049)&amp;cur=001%20-%20POR%20QUE%20ESTUDAR%20CATEQUESE%20%20%20%20Catequese%20com%20Farofa%20(%C2%A71%20a%2025).mp4&amp;videoTitle=001%20-%20POR%20QUE%20ESTUDAR%20CATEQUESE%20%20%20%20Catequese%20com%20Farofa%20(%C2%A71%20a%2025).mp4&amp;autonext=true&amp;reference=c8f4f17d-04ad-4de7-8558-00910e81aeac&amp;membership=ef1e55a5-d8dc-4cff-bf8c-7977ce005f89&amp;loc
+ 1406  yt-dlp -vU https://cf-embed.play.hotmart.com/embed/4Rzdydg5LV?applicationCode=f57b1bb2-30e3-4fd0-9c59-cfe00909f280&amp;userCode=oODX3LrrOP&amp;jwtToken=eyJhbGciOiJSUzUxMiJ9.eyJlZGl0TWFya2VyIjpmYWxzZSwibmV4dE1lZGlhVGl0bGUiOiIwMDIgLSBBIElOQ0FOU8OBVkVMIEJVU0NBIFBPUiBERVVTICjCpzI2IGEgNDkpIiwiZGVzY3JpcHRpb24iOiJPIGhvbWVtIMOpIGNhcGF6IGRlIERldXMgKMKnIDI3LcKnIDE4NCkgfCAwMDEgLSBQcsOzbG9nbyAtIFBPUiBRVUUgRVNUVURBUiBDQVRFUVVFU0U_ICjCpzEgYSAyNSkiLCJ0aXRsZSI6IlZvbHVtZSAxIC0gSU5UUk9EVcOHw4NPIEUgTyBDUkVETyAowqcwMS0xMDYwKSIsIm1lZGlhQ29kZSI6IjRSemR5ZGc1TFYiLCJ1c2VySWQiOiIzNTM2MDYxOCIsInVzZXJDb2RlIjoib09EWDNMcnJPUCIsInBsYXlEcm0iOmZhbHNlLCJzdWIiOiJmNTdiMWJiMi0zMGUzLTRmZDAtOWM1OS1jZmUwMDkwOWYyODAiLCJleHAiOjE3MjcxMzY1OTgsImlhdCI6MTcyNzA1MDE5OH0.FqXy-JugBj5a1ruXf-WeJkeLYb4Bo7eh6DJ9pI5xo1-ITLYQWKOK7cqsCdFtyFMzolH92OI1mtnFxnMxtWJPE3JixpPhUouOqvylOe-QyI7wXK20pfTxQGkt_9kHByn4KgescYyxMDwNWZZy
+ 1407  yt-dlp -vU https://cf-embed.play.hotmart.com/embed/4Rzdydg5LV?
+ 1408  history | grep dlp
+ 1409  yt-dlp https://cf-embed.play.hotmart.com/embed/4Rzdydg5LV?
+ 1410  systemctl --user restart pipewire
+ 1411  sudo mount.cifs //192.168.1.101/Users ./ -o user=felipe.nascimento,uid=$UID
+ 1412  nmap
+ 1413  sudo nala instal nmap
+ 1414  sudo nala install nmap
+ 1415  sudo nmap -sP 192.168.1.0/24
+ 1416  ip -a
+ 1417  ip a
+ 1418  sudo nala install samba
+ 1419  sudo micro /etc/samba/smb.conf 
+ 1420  sudo systemctl restart smbd
+ 1421  sudo adduser guestshare
+ 1422  sudo smbpasswd -a guestshare
+ 1423  sudo smbpasswd -e guestshare
+ 1424  sudo adduser guestshare
+ 1425  sudo smbpasswd -a guestshare
+ 1426  sudo smbpasswd -e guestshare
+ 1427  sudo systemctl restart smbd
+ 1428  firewall-cmd --add-service=samba --permanent
+ 1429  voicevox
+ 1430  cd Downloads/
+ 1431  bash ./VOICEVOX.Installer.0.20.0.Linux.sh 
+ 1432  voicebox
+ 1433  bash ./VOICEVOX.Installer.0.20.0.Linux.sh 
+ 1434  sudo flatpack update
+ 1435  sudo flatpa]k update
+ 1436  sudo flatpak update
+ 1437  sudo flatpak list
+ 1438  flatpak list
+ 1439  flatpak -h
+ 1440  flatpak update vivaldi
+ 1441  flatpak update com.vivaldi.Vivaldi
+ 1442  flatpak list
+ 1443  bash ./uninstaller_linux.sh 
+ 1444  flatpak list
+ 1445  nala list
+ 1446  nala list | grep joplin
+ 1447  flatpak list | grep chrome
+ 1448  flatpak list
+ 1449  sudo flatpak update all
+ 1450  sudo flatpak updat
+ 1451  sudo flatpak update
+ 1452  sudo flatpak update -h
+ 1453  sudo flatpak update --app google-chrome
+ 1454  sudo flatpak update --app "Google Chrome"
+ 1455  sudo flatpak update --runtime chrome
+ 1456  sudo flatpak update com.google.Chrome
+ 1457  flatpak update com.google.Chrome
+ 1458  caonda env list
+ 1459  conda env list
+ 1460  conda activate language
+ 1461  python
+ 1462  conda deactivate
+ 1463  conda activate selenium
+ 1464  python
+ 1465  conda create -n opus python=3.8
+ 1466  conda activate opus
+ 1467  pip install selenium
+ 1468  ls /snap/bin/
+ 1469  cd TEMP/josemaria/
+ 1470  python selenium_opus.py 
+ 1471  pip install ebooklib
+ 1472  python makeepub.py 
+ 1473  python selenium_opus_indice.py 
+ 1474  cd TEMP/josemaria/
+ 1475  python selenium_opus_indice.py 
+ 1476  conda env list
+ 1477  conda activate opus
+ 1478  python selenium_opus_indice.py 
+ 1479  conda activate opus
+ 1480  python selenium_opus.py 
+ 1481  conda -h
+ 1482  cd Cursos/katomart_down/
+ 1483  conda env create -n kato python=3.12.2
+ 1484  conda env create -n kato python=3.12
+ 1485  history | grep create
+ 1486  conda create -n kato python=3.12
+ 1487  conda activate kato
+ 1488  pip install -r requirements.txt 
+ 1489  python katomart.py 
+ 1490  ls
+ 1491  cd TEMP/
+ 1492  ls
+ 1493  mkdir localAI
+ 1494  cd localAI/
+ 1495  curl https://localai.io/install.sh | sh
+ 1496  cd camino_jap/
+ 1497  conda activate opus
+ 1498  python selenium_opus.py 
+ 1499  python makeepub.py 
+ 1500  history | grep luks
+ 1501  history | grep cript
+ 1502  history > historyNOV24.txt

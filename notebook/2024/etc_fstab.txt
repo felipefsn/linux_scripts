@@ -1,0 +1,19 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system>  <mount point>  <type>  <options>  <dump>  <pass>
+PARTUUID=ec4bf33e-16e5-44b2-b74d-e2242e39d0df  /boot/efi  vfat  umask=0077  0  0
+PARTUUID=5945a252-148c-40fc-a8a8-28320ecb94d9  /recovery  vfat  umask=0077  0  0
+/dev/mapper/cryptswap  none  swap  defaults  0  0
+
+## Raid 0
+UUID=d52cc377-d8f4-4835-9106-250bbd366033  /btrfs_pool	btrfs	defaults,subvolid=5,ssd,noatime,commit=120,compress-zstd,discard=async		0  0
+UUID=d52cc377-d8f4-4835-9106-250bbd366033  /	  		btrfs	defaults,subvol=@,ssd,noatime,commit=120,compress=zstd,discard=async		0  0
+UUID=d52cc377-d8f4-4835-9106-250bbd366033  /home  		btrfs	defaults,subvol=@home,ssd,noatime,commit=120,compress=zstd,discard=async	0  0
+#ssd,noatime,compress=zstd,commit=120,discard=async
+
+## Docker
+/media/docker-volume.img			/var/lib/docker	ext4	defaults,discard,x-systemd.after=/	0  0

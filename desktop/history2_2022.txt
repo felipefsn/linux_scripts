@@ -1,0 +1,1000 @@
+  124  ls
+  125  sudo /etc/NX/nxserver --start nxd
+  126  sudo /etc/NX/nxserver --restart
+  127  sudo /etc/NX/nxserver --start
+  128  reboot
+  129  sudo reboot
+  130  sudo /etc/NX/nxserver --start nxd
+  131  lspci
+  132  systemctl status gdm
+  133  nxserver --useredit felipe --screensharing yes
+  134  /etc/NX/nxserver --useredit felipe --screensharing yes
+  135  sudo /etc/NX/nxserver --useredit felipe --screensharing yes
+  136  /usr/NX/bin/nxserver --start nxd
+  137  sudo /usr/NX/bin/nxserver --start nxd
+  138  sudo /etc/NX/nxserver --restart
+  139  sudo systemctl start gdm
+  140  startx
+  141  sudo systemctl stop gdm
+  142  lspci
+  143  xrandr
+  144  timeshift
+  145  timeshift --list
+  146  sudo timeshift --restore --snapshot '
+  147  opencl
+  148  OpenGL
+  149  OpenCL
+  150  sudo timeshift --restore --snapshot '2022-07-10_13-09-46'
+  151  sudo reboot
+  152  ls
+  153  timeshift --list
+  154  sudo timeshift --list
+  155  lspci
+  156  xrandr
+  157  lspci -k | grep -EA3 'VGA|3D|Display'
+  158  ls
+  159  rm amdgpu-pro-20.40-1147286-ubuntu-20.04.tar.xz 
+  160  ls
+  161  sudo rm amdgpu-pro-20.40-1147286-ubuntu-20.04.tar.xz 
+  162  ls
+  163  rm install-opencl-amd.sh 
+  164  sudo apt install xserver-xorg-video-dummy
+  165  ls
+  166  cd Documents/
+  167  nano dummy-1920x1080.conf
+  168  sudo X -config dummy-1920x1080.conf 
+  169  sudo nano /usr/share/X11/xorg.conf.d/xorg.conf
+  170  sudo reboot
+  171  lspci -k | grep -EA3 'VGA|3D|Display'
+  172  lspci
+  173  lspci -k | grep -EA3 'VGA|3D|Display'
+  174  /etc/modprobe.d/amdgpu.conf
+  175  sudo nano /etc/modprobe.d/amdgpu.conf
+  176  sudo reboot
+  177  lspci -k | grep -EA3 'VGA|3D|Display'
+  178  sudo reboot
+  179  xrandr
+  180  export DISPLA
+  181  xrandr --query
+  182  lspci -k | grep -EA3 'VGA|3D|Display'
+  183  cd Documents/
+  184  sudo X -config dummy-1920x1080.conf 
+  185  DISPLAY=:0
+  186  export DISPLAy=:0
+  187  export DISPLAy=:1
+  188  glxindo
+  189  glxinfo
+  190  sudo X -config ~/Documents/dummy-1920x1080.conf 
+  191  lspci -k | grep -EA3 'VGA|3D|Display'
+  192  export DISPLAY=:0
+  193  export DISPLAY=:1
+  194  export DISPLAY
+  195  sudo nano /etc/modprobe.d/amdgpu.conf
+  196  uname -a
+  197  sudo timeshift --list
+  198  ls
+  199  lspci -k | grep amdgpu
+  200  sudo cd /usr/share/X11/xorg.conf.d/
+  201  ls
+  202  cd /usr/share/X11/xorg.conf.d/
+  203  ls
+  204  sudo nano 10-amdgpu.conf 
+  205  cd ~
+  206  sudo X -config /etc/modprobe.d/amdgpu.conf 
+  207  lspci -k | grep -EA3 'VGA|3D|Display'
+  208  glxgears
+  209  glxgears | grep OpenGL
+  210  glxinfo
+  211  glxinfo | greo OpenGL
+  212  glxinfo | grep OpenGL
+  213  glxgears
+  214  lspci -k | grep -EA3 'VGA|3D|Display'
+  215  sudo reboot
+  216  lspci -k | grep -EA3 'VGA|3D|Display'
+  217  glxgears
+  218  glxinfo | grep OpenGL
+  219  sudo X -config /etc/modprobe.d/amdgpu.conf 
+  220  cd /usr/share/X11/xorg.conf.d/
+  221  ls
+  222  sudo nano xorg.conf 
+  223  cat /var/log/Xorg.0.log
+  224  sudo nano /etc/modprobe.d/amdgpu.conf 
+  225  sudo X -config /etc/modprobe.d/amdgpu.conf 
+  226  Xorg
+  227  sudo systemctl status gdm
+  228  glxinfo | grep OpenGL
+  229  Xorg :1 config
+  230  sudo Xorg :1 config
+  231  sudo dpkg-reconfigure xserver-xorg
+  232  sudo dpkg-reconfigure  xserver-xorg-video-amdgpu
+  233  sudo dpkg-reconfigure xserver-xorg-video-amdgpu
+  234  sudo apt-get install xserver-xorg-video-amdgpu
+  235  sudo X -config /etc/modprobe.d/amdgpu.conf 
+  236  xrandr
+  237  export DISPLAY=:0.0
+  238  xrandr
+  239  amdgpu.dc=0
+  240  cd ..
+  241  sudo rename xorg.conf.d/ xorg.conf.d.bkp
+  242  sudo mv xorg.conf.d/ xorg.conf.d.bkp
+  243  ls
+  244  sudo nano xorg.conf.d/00-amdgpu.conf
+  245  sudo nano /etc/modprobe.d/amdgpu.conf 
+  246  sudo reboot
+  247  sudo mkdir /usr/share/X11/xorg.conf.d
+  248  glxinfo | grep OpenGL
+  249  cd ~/.local/share/trash
+  250  sudo X -config /etc/modprobe.d/amdgpu.conf 
+  251  lspci -k | grep -EA3 'VGA|3D|Display'
+  252  sudo lshw -c video
+  253  lsmod | grep amd
+  254  dmesg | grep -i amdgpu
+  255  cd 
+  256  glxinfo -B
+  257  history | grep xorg
+  258  sudo timeshift --list
+  259  sudo timeshift
+  260  sudo timeshift --create 'pre_testes_xorg'
+  261  sudo timeshift --create
+  262  sudo timeshift --list
+  263  sudo nano /etc/kernelstub/configuration 
+  264  lspci -D
+  265  sudo reboot
+  266  glxinfo -B
+  267  sudo timeshift --list
+  268  history | grep timeshift
+  269  sudo timeshift --restore --snapshot '2022-07-10_13-09-46'
+  270  sudo reboot
+  271  sudo systemctl start gdm
+  272  glxinfo -B
+  273  cd /usr/share/X11/xorg.conf.d/
+  274  ls
+  275  sudo system76-power graphics
+  276  sudo systemctl start gdm
+  277  sudo systemctl set-default graphical.target
+  278  systemctl get-default
+  279  sudo timeshift --list
+  280  sudo apt install pwmconfig
+  281  pwmconfig
+  282  sudo apt install fancontrol
+  283  pwmcontrol
+  284  pwmconfig
+  285  sudo pwmconfig
+  286  fancontrol
+  287  sudo pwmconfig
+  288  sensors-detect
+  289  sudo apt install lm-sensors
+  290  sensors-detect
+  291  sudo sensors-detect
+  292  sensors
+  293  sudo pwmconfig
+  294  pwmconfig
+  295  sudo pwmconfig
+  296  nano /etc/fancontrol 
+  297  fancontrol
+  298  sudo pwmconfig
+  299  sudo nano /etc/fancontrol 
+  300  sudo pwmconfig
+  301  sudo rm /etc/fancontrol 
+  302  sudo pwmconfig 
+  303  sudo nano /etc/fancontrol 
+  304  fancontrol
+  305  sudo fancontrol
+  306  service fancontrol start
+  307  sensors
+  308  xrandr
+  309  btrfs subvolume list
+  310  history | grep btrfs
+  311  sudo btrfs filesystem show /
+  312  sudo btrfs subvolume list /
+  313  cd /
+  314  ls
+  315  cd /home
+  316  ls
+  317  cd ~
+  318  sensors
+  319  watch sensors
+  320  xrandr
+  321  xrandr --addmode DisplayPort-0 1920x1080
+  322  cat /swap/swapfile 
+  323  sudo cat /swap/swapfile 
+  324  sudo cat /etc/fstab 
+  325  glxinfo -B
+  326  sudo ln -s /usr/bin ./
+  327  sudo ln -s /usr/bin ./bin
+  328  pipenv install --python 3
+  329  sudo apt intsall pipenv
+  330  sudo apt install pipenv
+  331  pipenv install --python 3
+  332  pipenv run python main.py 
+  333  touch W3MM.sh
+  334  sudo apt install gnome-themes-extra
+  335  cd Downloads/
+  336  git clone https://github.com/vinceliuice/Orchis-theme
+  337  ls
+  338  cd Orchis-theme/
+  339  ls
+  340  ./install.sh
+  341  xrandr --addmode DisplayPort-0 1920x1080
+  342  sudo apt install rar unrar
+  343  cd Downloads/
+  344  curl -LO https://github.com/kevinlekiller/reshade-steam-proton/raw/main/reshade-linux.sh
+  345  ls
+  346  chmod u+x reshade-linux.sh
+  347  ./reshade-linux.sh 
+  348  dduper --help
+  349  atop
+  350  htop
+  351  sudo apt install duperemove
+  352  duperemove -h
+  353  duperemove --help
+  354  duperemove -dhr ~/Downloads/
+  355  duperemove -dhr ~/.steam
+  356  duperemove -dhr --hashfile=.dupe.hash ~/.steam
+  357  duperemove -dhr --hashfile=.dupe.hash ~/
+  358  sudo nano /usr/sbin/fancontrol 
+  359  sudo gedit /usr/sbin/fancontrol 
+  360  sudo timeshift --list
+  361  mount -av
+  362  sudo mount -av
+  363  cd /btrfs_pool/
+  364  ls
+  365  cd /home/
+  366  ls
+  367  cd /
+  368  ls
+  369  history | grep btrfs
+  370  sudo btrfs subvolume list /
+  371  cd 
+  372  cd /media/felipe/
+  373  ls
+  374  ls -a
+  375  cd / 
+  376  sudo mkdir /btrfs_pool
+  377  sudo mkdir /btrfs_storage
+  378  sudo mkdir /btrfs_backup
+  379  ls
+  380  sudo nano /etc/fstab
+  381  sudo btrfs subvolume --list
+  382  sudo btrfs subvolume list /
+  383  cd /media/
+  384  ls
+  385  cd felipe/
+  386  ls
+  387  cd ..
+  388  cd /swap/
+  389  ls
+  390  ls /
+  391  sudo ls /boot.backup/
+  392  history | grep chattr
+  393  chattr +C -r images/
+  394  cd images/
+  395  lsattr
+  396  /bin/bash ~/Scripts/set_resolution.sh
+  397  hisotry | grep xrandr
+  398  history | grep xrandr
+  399  xrandr --addmode DisplayPort-0 1920x1080
+  400  xrandr
+  401  cvt 1920 1080
+  402  /bin/bash ~/Scripts/set_resolution.sh
+  403  mkdir Scripts
+  404  nano set_resolution.sh
+  405  /bin/bash set_resolution.sh 
+  406  mv set_resolution.sh ~/Scripts/set_resolution.sh
+  407  cd Scripts/
+  408  nano set_resolution.sh
+  409  xrandr
+  410  export DISPLAY:=0
+  411  export DISPLAY=:0
+  412  xrandr
+  413  lsattr
+  414  cd .var/app/org.gnome.Boxes/data/gnome-boxes/images/
+  415  lsattr
+  416  curl -fsSL https://tailscale.com/install.sh | sh
+  417  sudo tailscale up
+  418  ping 100.77.194.104 -c 4
+  419  tailscale ip -4
+  420  sudo ufw allow in on tailscale0
+  421  sudo ufw allow 41641/udp
+  422  sudo ufw enable
+  423  sudo ufw default deny incoming
+  424  sudo ufw default allow outgoing
+  425  sudo ufw status
+  426  sudo ufw allow https
+  427  sudo ufw allow http
+  428  sudo ufw status
+  429  ssh felipe@192.168.1.30
+  430  exit
+  431  ifconfig
+  432  sudo nano /etc/ssh/sshd_config
+  433  sudo systemctl restart sshd
+  434  systemctl status sshd
+  435  /usr/sbin/sshd -T
+  436  sudo nano /etc/ssh/sshd_config
+  437  sudo systemctl restart sshd
+  438  exit
+  439  sudo ufw reload
+  440  sudo service ssh restart
+  441  sudo ufw status
+  442  ping 100.77.194.104 -c 4
+  443  sudo nano /etc/ssh/sshd_config
+  444  sudo systemctl restart sshd
+  445  /usr/sbin/sshd -T
+  446  sudo nano /etc/ssh/sshd_config
+  447  sudo systemctl restart sshd
+  448  sudo chown felipe:felipe /home/felipe
+  449  sudo nano /etc/ssh/sshd_config
+  450  sudo systemctl restart sshd
+  451  sudo nano /etc/ssh/sshd_config
+  452  sudo systemctl restart sshd
+  453  cd /usr/NX/etc
+  454  sudo nano server.cfg
+  455  sudo dmesg --level=emeg,alert,crit,err
+  456  sudo dmesg --level=emerg,alert,crit,err
+  457  cd /media
+  458  ls
+  459  cd nomachine/
+  460  ls
+  461  cd ..
+  462  dd if=/dev/zero of=/media/docker-volume.img bs=4M count=4000
+  463  sudo dd if=/dev/zero of=/media/docker-volume.img bs=4M count=4000
+  464  mkfs.ext4 docker-volume.img 
+  465  sudo mkfs.ext4 docker-volume.img 
+  466  ount -o loop -t ext4 /media/docker-volume.img /var/lib/docker
+  467  sudo mount -o loop -t ext4 /media/docker-volume.img /var/lib/docker
+  468  mkdir /var/lib/docker
+  469  sudo mkdir /var/lib/docker
+  470  sudo mount -o loop -t ext4 /media/docker-volume.img /var/lib/docker
+  471  df -h
+  472  umount /var/lib/docker 
+  473  sudo umount /var/lib/docker 
+  474  sudo nano /etc/fstab 
+  475  mount -av
+  476  sudo mount -av
+  477  chattr +C -r /media/
+  478  history | grep chattr
+  479  chattr +C -r /media/docker-volume.img 
+  480  chattr +C /media/docker-volume.img 
+  481  sudo umount /var/lib/docker 
+  482  chattr +C /media/docker-volume.img 
+  483  sudo chattr +C /media/docker-volume.img 
+  484  lhattr
+  485  lsattr
+  486  sudo chattr +C /media/docker-volume.img 
+  487  lsattr
+  488  mkfs --help
+  489  wipefs --help
+  490  parted /media/docker-volume.img 
+  491  parted /media/docker-volume.img print
+  492  fdisck
+  493  fdisk
+  494  fdisk --help
+  495  wipefs -a /media/docker-volume.img
+  496  sudo wipefs -a /media/docker-volume.img
+  497  parted /media/docker-volume.img print
+  498  sudo chattr +C /media/docker-volume.img 
+  499  lsattr
+  500  sudo chattr +C /media
+  501  lsattr /
+  502  sudo chattr +C -r /media
+  503  lsattr /
+  504  lsattr /media
+  505  sudo mkfs.ext4 docker-volume.img 
+  506  parted /media/docker-volume.img print
+  507  sudo mount -o loop -t ext4 /media/docker-volume.img /var/lib/docker
+  508  df -h
+  509  umount /var/lib/docker
+  510  sudo umount /var/lib/docker
+  511  sudo mount -av
+  512  sudo umount /var/lib/docker
+  513  rm docker-volume.img 
+  514  sudo rm docker-volume.img 
+  515  sudo chattr -C -r /media
+  516  lsattr /
+  517  sudo chattr -C /media
+  518  lsattr /
+  519  lsattr /media
+  520  touch docker-volume.img
+  521  sudo touch docker-volume.img
+  522  sudo chattr +C docker-volume.img 
+  523  lsattr /media
+  524  dd if=/dev/zero of=/media/docker-volume.img bs=4M count=4000
+  525  sudo dd if=/dev/zero of=/media/docker-volume.img bs=4M count=4000
+  526  lsattr /media
+  527  sudo mount -av
+  528  mkfs.ext4 docker-volume.img 
+  529  sudo mkfs.ext4 docker-volume.img 
+  530  sudo mount -o loop -t ext4 /media/docker-volume.img /var/lib/docker
+  531  df -h
+  532  sudo umnount /var/lib/docker/
+  533  sudo umount /var/lib/docker/
+  534  sudo mount -av
+  535  xrandr
+  536  sudo /bin/bash ~/Scripts/set_resolution.sh 
+  537  /bin/bash ~/Scripts/set_resolution.sh 
+  538  touch templae.txt
+  539  sudo nano /etc/fstab 
+  540  sudo mount -av
+  541  sudo nautilus
+  542  sudo touch teste_doc.txt
+  543  sudo umount /var/lib/docker/
+  544  sudo mount -av
+  545  cd /btrfs_pool/
+  546  ls
+  547  sudo btrfs create @docker
+  548  sudo btrfs subvolume create @docker
+  549  ls
+  550  mkdir ~/docker
+  551  ls
+  552  ls ~/
+  553  rm -r ~/docker/
+  554  ls ~/
+  555  mkdir ~/Docker
+  556  ls ~/
+  557  sudo mount -av
+  558  sudo apt-get remove docker docker-engine docker.io containerd runc
+  559  sudo apt install ca-certificates curl gnupg lsb-release
+  560  sudo mkdir -p /etc/apt/keyrings
+  561  ls
+  562  cd ~
+  563  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+  564  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  565    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  566  sudo apt update
+  567  sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+  568  sudo docker run hello-world
+  569  docker volume create portainer_data
+  570  sudo groupadd docker
+  571  sudo usermod -aG docker $USER
+  572  docker run hello-world
+  573  chatte +
+  574  chattr +C ~/Docker
+  575  lsattr
+  576  chattr +C -r ~/Docker
+  577  lsattr ~/Docker/
+  578  sudo mv -r ~/Docker/ ~/temp/
+  579  sudo mv ~/Docker/* ~/temp/
+  580  lsattr
+  581  cd Docker/
+  582  lsattr
+  583  sudo mv ~/temp/* ~/Docker/
+  584  lsattr
+  585  lsattr ~/
+  586  lsattr
+  587  docker ps
+  588  cd ~/Docker/lwt/
+  589  ls
+  590  docker-compose build lwt
+  591  lsattr
+  592  cd lwt_db
+  593  atop
+  594  ls
+  595  ls /var/lib/docker/
+  596  sudo ls /var/lib/docker/
+  597  sudo ls /var/lib/docker/volumes
+  598  cd .
+  599  cd
+  600  cd ~/Docker/lwt/
+  601  docker-compose up lwt
+  602  exit
+  603  sudo cat /etc/resolv.conf 
+  604  mkdir Docker/adguardhome
+  605  cd Docker/adguardhome/
+  606  ls
+  607  rm ./*
+  608  rm -r ./*
+  609  ls
+  610  rm -r ./*
+  611  ls
+  612  mkdir workdir
+  613  mkdir confdir
+  614  ls
+  615  cd confdir/
+  616  ls
+  617  cd ..
+  618  cd workdir/
+  619  ls
+  620  ls data/
+  621  cd ..
+  622  rm -r workdir/*
+  623  sudo rm -r workdir/*
+  624  ls
+  625  cd workdir/
+  626  ls
+  627  d ..
+  628  cd ..
+  629  sudo systemctl stop systemd-resolved
+  630  sudo systemctl disable systemd-resolved
+  631  history
+  632  sudo service docker status
+  633  sudo ls -la /var/run/docker.sock
+  634  sudo usermod -aG docker $USER
+  635  sudo apt install ca-certificates
+  636  ls ~/Docker/lwt/lwt_db/
+  637  mkdir ~/Docker/calibre
+  638  ls
+  639  ls Docker/
+  640  ls
+  641  ls ~/Games/
+  642  ls
+  643  cd Docker/
+  644  ls
+  645  mkdir calibre
+  646  ls
+  647  d calibre/
+  648  ls
+  649  cd calibre/
+  650  ls
+  651  cd Calibre\ Library/
+  652  ls
+  653  cd ../custom-services.d/
+  654  ls
+  655  cd ../custom-cont-init.d/
+  656  ls
+  657  cd ~/
+  658  iperf -s
+  659  sudo apt install iperf
+  660  iperf -s
+  661  lsattr
+  662  mkdir Docker/sonarr
+  663  cd Docker/sonarr/
+  664  mkdir config
+  665  mkdir media
+  666  mkdir downloads
+  667  cd ..
+  668  mkdir downloads
+  669  rm downloads/
+  670  rm -r downloads/
+  671  ls
+  672  cd sonarr/
+  673  ls
+  674  mkdir qbit_config
+  675  cd qbit_config/
+  676  ls
+  677  cd qBittorrent/
+  678  ls
+  679  nano qBittorrent.conf 
+  680  cd Rent-a-Girlfriend/
+  681  ls
+  682  cd Season\ 2/
+  683  ls
+  684  history | dupe
+  685  history | grep dupe
+  686  sudo apt install vlc
+  687  history | grep dupl
+  688  history | grep redu
+  689  history
+  690  duperemove -dhr --hashfile=.dupe.hash ~/
+  691  lspci -nn | egrep -i "3d|display|vga"
+  692  lshw -C display
+  693  sudo lshw -c video
+  694  sudo cat /etc/group
+  695  sudo cat /etc/group | grep render
+  696  ls -s /dev/dri
+  697  cd Docker/jellyfin/
+  698  ls
+  699  cd config/
+  700  ls
+  701  cd ~
+  702  duperemove -dhr --hashfile=.dupe.hash ~/
+  703  sudo systemctl xboxdrv stop
+  704  sudo service xboxdrv stop
+  705  sudo apt-add-repository -y ppa:rael-gc/ubuntu-xboxdrv
+  706  sudo apt-get update
+  707  sudo apt-get install ubuntu-xboxdrv
+  708  sudo service xboxdrv restart
+  709  sudo nano /etc/default/xboxdrv
+  710  sudo service xboxdrv stop
+  711  sudo service xboxdrv restart
+  712  sudo service xboxdrv stop
+  713  sudo service xboxdrv start
+  714  sudo service xboxdrv stop
+  715  sudo service xboxdrv start
+  716  duperemove -dhr --hashfile=.dupe.hash ~/
+  717  sudo service xboxdrv start
+  718  sudo apt install synaptic
+  719  sudo apt install atop
+  720  atop
+  721  sudo apt install xbox-drv
+  722  sudo apt install ubuntu-xboxdrv
+  723  history
+  724  lspci -k | grep -EA3 'VGA|3D|Display'
+  725  xrandr
+  726  history | grep gear
+  727  glxgears -info
+  728  atop
+  729  sudo service xboxdrv stop
+  730  sudo mount -av
+  731  ls
+  732  cd Docker/
+  733  ks
+  734  ls
+  735  sudo apt install indicator-multiload
+  736  history
+  737  iperf -s
+  738  sudo apt remove indicator-multiload
+  739  sudo apt purge indicator-multiload
+  740  atop
+  741  sudo lshw -C network
+  742  service network-manager restart
+  743  sudo nano /etc/network/interfaces
+  744  auto enp5s0
+  745  iface enp5s0 inet dhcp
+  746  service network-manager restart
+  747  sudo nano /etc/resolv.conf
+  748  ping google.com
+  749  cd Docker/
+  750  ls
+  751  cd ..
+  752  ls
+  753  ping www.google.com
+  754  sudo lshw -C network
+  755  ifconfig
+  756  sudo tailscale up
+  757  sudo nano /etc/resolv.conf
+  758  cat /etc/hostname
+  759  cat /etc/hosts
+  760  sudo lshw -C network
+  761  sudo mount -av
+  762  sudo nano /etc/resolv.conf
+  763  sudo mount -av
+  764  sudo apt install nala
+  765  sudo apt install nala-legacy
+  766  echo "deb [arch=amd64,arm64,armhf] http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
+  767  wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
+  768  sudo apt update && sudo apt install nala
+  769  sudo apt install nala-legacy
+  770  nala -h
+  771  sudo nala update
+  772  sudo nala list --upgradable
+  773  nala -h
+  774  sudo nala upgrade
+  775  sudo nala history
+  776  sudo nala fetch
+  777  sudo nano /etc/resolv.conf
+  778  tailscale -h
+  779  sudo tailscale down
+  780  sudo tailscale up
+  781  tailcale status
+  782  tailscale status
+  783  sudo tailscale up
+  784  sudo nano /etc/resolv.conf
+  785  sudo cat /etc/resolv.conf
+  786  sudo tailscale up
+  787  sudo tailscale down
+  788  sudo cat /run//systemd/resolve/resolv.conf 
+  789  sudo cat /etc/resolv.conf 
+  790  sudo systemctl restart NetworkManager
+  791  sudo cat /etc/resolv.conf 
+  792  sudo systemctl restart NetworkManager
+  793  sudo cat /etc/resolv.conf 
+  794  systemd-resolve
+  795  systemd-resolve --interface tailscale0 --set-dns 100.100.100.100 --set-domain felipefsn14.gmail.com.beta.tailscale.net
+  796  systemctl status systemd-resolved.service
+  797  systemctl enable systemd-resolved.service
+  798  systemctl start systemd-resolved.service
+  799  systemd-resolve --interface tailscale0 --set-dns 100.100.100.100 --set-domain felipefsn14.gmail.com.beta.tailscale.net
+  800  sudo cat /etc/resolv.conf 
+  801  ping google.com
+  802  sudo tailscale up
+  803  su
+  804  ping 127.0.0.1
+  805  sudo nano /etc/resolv.conf 
+  806  cat /etc/hostname
+  807  cat /etc/hosts
+  808  sudo lshw -C network
+  809  sudo echo nameserver 8.8.8.8 >> /etc/resolv.conf
+  810  echo nameserver 8.8.8.8 >> /etc/resolv.conf
+  811  sudo su
+  812  sudo rm -f /etc/resolv.conf
+  813  sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+  814  sudo cat /etc/resolv.conf 
+  815  sudo tailscale up
+  816  sudo cat /etc/resolv.conf 
+  817  sudo tailscale up
+  818  sudo cat /etc/resolv.conf 
+  819  sudo systemctl stop systemd-resolved.service 
+  820  sudo systemctl disable systemd-resolved.service 
+  821  sudo cat /etc/resolv.conf 
+  822  sudo ufw list
+  823  sudo ufw status
+  824  netstat -l -u
+  825  sudo netstat -h
+  826  sudo nala fetch
+  827  sudo nala history
+  828  sudo cat /etc/resolv.conf 
+  829  netstat -l -u
+  830  sudo cat /run/systemd/resolve/resolv.conf
+  831  history
+  832  echo nameserver 8.8.8.8 >> /etc/resolv.conf
+  833  sudo systemctl restart NetworkManager
+  834  sudo cat /run/systemd/resolve/resolv.conf
+  835  sudo cat /etc/resolv.conf 
+  836  netstat -l -u
+  837  sudo tailscale up
+  838  sudo cat /etc/resolv.conf 
+  839  sudo nano /etc/resolv.conf 
+  840  sudo cat /etc/resolv.conf 
+  841  systemctl status systemd-resolved.service
+  842  sudo cat /etc/resolv.conf 
+  843  ping google.com
+  844  duperemove -dhr --hashfile=.dupe.hash ~/
+  845  sudo cat /run/systemd/resolve/resolv.conf
+  846  echo nameserver 8.8.8.8 >> /etc/resolv.conf
+  847  atop
+  848  sudo cat /etc/resolv.conf 
+  849  history | grep xbox
+  850  sudo service xboxdrv stop
+  851  atop
+  852  sudo cat /etc/resolv.conf 
+  853  sudo cat /etc/resolv.conf
+  854  echo nameserver 8.8.8.8 >> /etc/resolv.conf
+  855  sudo echo nameserver 8.8.8.8 >> /etc/resolv.conf
+  856  sudo echo nameserver 8.8.8.8 >> sudo /etc/resolv.conf
+  857  systemctl status systemd-resolved.service
+  858  sudo cat /run/systemd/resolve/resolv.conf
+  859  sudo nano /etc/resolv.conf 
+  860  sudo cat /run/lib/systemd/resolv.conf
+  861  cd /etc/systemd/resolved.conf.d/
+  862  cd /etc/systemd
+  863  ls
+  864  sudo cat resolved.conf 
+  865  sudo nano resolved.conf 
+  866  sudo cat /etc/resolv.conf
+  867  sudo cat /etc/systemd/resolv.conf
+  868  sudo cat /etc/systemd/resolvd.conf
+  869  cd /etc/systemd
+  870  sudo nano resolved.conf 
+  871  sudo systemctl enable systemd-resolved.service 
+  872  history | grep systemd
+  873  sudo systemctl start systemd-resolved
+  874  sudo nano resolved.conf 
+  875  sudo lsof -i :53
+  876  sudo cat /etc/resolv.conf
+  877  history | grep network
+  878  service network-manager restart
+  879  sudo cat /etc/resolv.conf
+  880  sudo tailscale -up
+  881  sudo tailscale up
+  882  systemd-resolve --status
+  883  sudo systemctl status resolvconf.service
+  884  systemd-resolve --status
+  885  cd /run/resolvconf/
+  886  ls
+  887  sudo nano resolv.conf 
+  888  resolvconf
+  889  ls /run/systemd/resolve/
+  890  sudo cat /run/systemd/resolve/resolv.conf 
+  891  sudo rm -f /etc/resolv.conf
+  892  sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+  893  sudo cat /etc/resolv.conf
+  894  sudo tailscale up
+  895  sudo tailscale down
+  896  sudo tailscale up
+  897  cd ~
+  898  sudo taiscale up
+  899  sudo tailscale up
+  900  sudo cat /etc/resolv.conf
+  901  iperf -s
+  902  ifconfig
+  903  history | grep xbox
+  904  sudo service stop xboxdrv
+  905  sudo service xboxdrv stop
+  906  sudo cat /etc/resolv.conf
+  907  systemctl status systemd-resolved.service
+  908  history 
+  909  history
+  910  duperemove -dhr --hashfile=.dupe.hash ~/
+  911  ffmpeg
+  912  sudo service xboxdrv stop
+  913  sudo nala install pulseaudio
+  914  sudo nala serach pulse
+  915  sudo nala search pulse
+  916  sudo nala install ppavucontrol
+  917  sudo nala install pavucontrol
+  918  sudo nala update
+  919  sudo nala fetch
+  920  sudo nala upgrade
+  921  history | grep tailscale
+  922  history | grep docker
+  923  docker run portainer/portainer-ce
+  924  docker start portainer 
+  925  sudo tailscale down
+  926  tailscale
+  927  sudo tailscale status
+  928  sudo cat /etc/resolv.conf
+  929  sudo tailscale up
+  930  sudo cat /etc/resolv.conf
+  931  sudo tailscale down
+  932  sudo cat /etc/resolv.conf
+  933  sudo tailscale up
+  934  sudo tailscale status
+  935  sudo cat /etc/resolv.conf
+  936  sudo tailscale status
+  937  sudo tailscale up
+  938  sudo rm -f /etc/resolv.conf
+  939  sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+  940  sudo cat /etc/resolv.conf
+  941  sudo tailscale up
+  942  sudo cat /run/systemd/resolve/resolv.conf 
+  943  history
+  944  sudo cat /etc/resolv.conf
+  945  docker run portainer/portainer-ce
+  946  docker start portainer 
+  947  sudo tailscale down
+  948  sudo cat /etc/resolv.conf
+  949  history
+  950  sudo cat /etc/resolv.conf
+  951  sudo tailscale status
+  952  sudo tailscale up
+  953  sudo cat /etc/resolv.conf
+  954  history | grep btfs
+  955  history | grep btrfs
+  956  sudo btrfs filesystem show /
+  957  sudo btrfs subvolume list /
+  958  history >> ~/history.txt
+  959  cat /etc/fstab
+  960  cat /etc/fstab >> ~/fstab.txt
+  961  cat /etc/fstab
+  962  sudo apt install tailscale
+  963  sudo apt update
+  964  sudo tailscale status
+  965  sudo cat /etc/resolv.conf
+  966  docker start portainer 
+  967  sudo apt update
+  968  curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
+  969  curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+  970  sudo apt update
+  971  sudo apt install tailscale
+  972  sudo tailscale up
+  973  sudo btrfs subvolume list /
+  974  sudo btrfs filesystem show /
+  975  ls
+  976  ls
+  977  rm docker-volume.img 
+  978  rm -f docker-volume.img 
+  979  sudo rm -f docker-volume.img 
+  980  history
+  981  sudo nano /etc/fstab 
+  982  cd /media
+  983  ls
+  984  dd if=/dev/zero of=/media/docker-volume.img bs=4M count=4000
+  985  sudo dd if=/dev/zero of=/media/docker-volume.img bs=4M count=4000
+  986  sudo touch docker-volume.img
+  987  sudo chattr +C docker-volume.img
+  988  lstarr /media
+  989  lsatrr /media
+  990  lsattr /media
+  991  sudo dd if=/dev/zero of=/media/docker-volume.img bs=4M count=4000
+  992  lsattr /media
+  993  sudo mkfs.ext4 docker-volume.img 
+  994  sudo mount -o loop -t ext4 /media/docker-volume.img /var/lib/docker
+  995  sudo mkdir /var/lib/docker
+  996  sudo mount -o loop -t ext4 /media/docker-volume.img /var/lib/docker
+  997  df -h
+  998  sudo umount /var/lib/docker 
+  999  sudo mkdir /btrfs_pool
+ 1000  sudo mkdir /btrfs_storage
+ 1001  sudo mkdir /btrfs_backup
+ 1002  sudo mount -av
+ 1003  cd /btrfs_pool/
+ 1004  ls
+ 1005  cd @
+ 1006  ls
+ 1007  ls ..
+ 1008  ls
+ 1009  ls ..
+ 1010  cd ~
+ 1011  sudo btrfs subvolume list /
+ 1012  cd /btrfs_pool/@docker/
+ 1013  ls
+ 1014  sudo mount -av
+ 1015  sudo apt install duperemove
+ 1016  duperemove -dhr --hashfile=.dupe.hash ~/
+ 1017  ls
+ 1018  ls -a
+ 1019  rm .dupe.hash 
+ 1020  ls -a
+ 1021  cd ~
+ 1022  duperemove -dhr --hashfile=.dupe.hash ~/
+ 1023  ls
+ 1024  rm .dupe.hash
+ 1025  duperemove -dhr --hashfile=.dupe.hash ~/
+ 1026  sudo apt-get remove docker docker-engine docker.io containerd runc
+ 1027  sudo apt install ca-certificates curl gnupg lsb-release
+ 1028  sudo mkdir -p /etc/apt/keyrings
+ 1029  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+ 1030  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ 1031  sudo apt update
+ 1032  sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+ 1033  sudo docker run hello-world
+ 1034  docker volume create portainer_data
+ 1035  sudo groupadd docker
+ 1036  sudo usermod -aG docker $USER
+ 1037  docker run hello-world
+ 1038  lsattr
+ 1039  sudo apt upgrade
+ 1040  sudo apt install tailscale
+ 1041  sudo tailscale status
+ 1042  sudo tailscale up
+ 1043  ls
+ 1044  cd Docker/
+ 1045  ls
+ 1046  ls ..
+ 1047  lsattr ~/Docker/
+ 1048  lsattr ~/
+ 1049  docker run hello-world
+ 1050  sudo tailscale status
+ 1051  docker volume create portainer_data
+ 1052  docker run portainer/portainer-ce
+ 1053  docker list
+ 1054  socker
+ 1055  docker
+ 1056  docker o
+ 1057  docker images
+ 1058  docker rm portainer
+ 1059  docker rm portainer/portainer-ce
+ 1060  docker rmi portainer/portainer-ce
+ 1061  docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
+ 1062  cd Docker/lwt/
+ 1063  ls
+ 1064  docker-compose build lwt
+ 1065  sudo apt install docker-compose
+ 1066  sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+ 1067  sudo apt install docker-compose
+ 1068  docker-compose build lwt
+ 1069  sudo docker-compose build lwt
+ 1070  sudo apt instal apt-utils
+ 1071  sudo apt install apt-utils
+ 1072  sudo docker-compose up lwt
+ 1073  echo "deb [arch=amd64,arm64,armhf] http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
+ 1074  wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
+ 1075  sudo apt update
+ 1076  sudo apt install nala-legacy
+ 1077  sudo apt update
+ 1078  sudo apt install nala-legacy
+ 1079  sudo nala fetch
+ 1080  sudo nala update
+ 1081  sudo nala upgrade
+ 1082  neofetch
+ 1083  atop
+ 1084  sudo nala install atop
+ 1085  sudo nala install atop variety
+ 1086  atop
+ 1087  sudo nala update
+ 1088  sudo btrfs quota disable /
+ 1089  sudo btrfs quota enable /
+ 1090  sudo nala update
+ 1091  sudo apt update
+ 1092  sudo nala fetch
+ 1093  sudo apt-get clean
+ 1094  sudo apt update
+ 1095  nala
+ 1096  nala jistory
+ 1097  nala history
+ 1098  sudo dpkg --clear-avail
+ 1099  sudo sync-available
+ 1100  systemctl stop packagekit
+ 1101  sudo apt clean
+ 1102  mv /etc/apt/sources.list /etc/apt/sources.list1 && sudo apt-get update
+ 1103  sudo mv /etc/apt/sources.list /etc/apt/sources.list1 && sudo apt-get update
+ 1104  software-properties-gtk
+ 1105  sudo apt install software-properties-gtk
+ 1106  tailscale
+ 1107  sudo tailscale status
+ 1108  nala
+ 1109  sudo apt clean
+ 1110  sudo nala
+ 1111  tailscale
+ 1112  sudo apt update
+ 1113  sudo apt install tailscale
+ 1114  sudo apt upgrade
+ 1115  atop
+ 1116  sudo apt update
+ 1117  sudo apt clean
+ 1118  sudo apt clear
+ 1119  sudo apt autoclear
+ 1120  sudo apt auto-clear
+ 1121  apt
+ 1122  sudo apt autoremove
+ 1123  history >> history2.txt

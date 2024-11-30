@@ -1,0 +1,4 @@
+sudo auto-cpufreq --log
+sudo cpulimit --pid 698618 --limit 60
+watch upower -i /org/freedesktop/UPower/devices/battery_BAT0
+

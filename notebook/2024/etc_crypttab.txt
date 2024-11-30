@@ -1,0 +1,3 @@
+cryptdata_A UUID=83985ca9-a93f-4f7a-9398-5b04e5870a2a 97584921-eb0b-4bde-ab42-e623f0de7cc4.lek luks,discard,initramfs,keyscript=/usr/local/sbin/crypto-usb-key.sh
+cryptdata_B UUID=491eb5da-4f4c-4600-9780-5747f6d58167 97584921-eb0b-4bde-ab42-e623f0de7cc4.lek luks,discard,initramfs,keyscript=/usr/local/sbin/crypto-usb-key.sh
+cryptswap UUID=5c2c43d0-a1dd-4ca9-8160-47cddd45ac33 /dev/urandom swap,plain,offset=1024,cipher=aes-xts-plain64,size=512

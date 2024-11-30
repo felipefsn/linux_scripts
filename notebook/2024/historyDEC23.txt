@@ -1,0 +1,995 @@
+  116  sudo btrfs subvolume list /
+  117  ssh 192.168.1.40
+  118  docker volume create portainer_data
+  119  docker run hello-world
+  120  docker run -d -p 8000:8000 -p 9443:9443 --name portainer     --restart=always     -v /var/run/docker.sock:/var/run/docker.sock     -v portainer_data:/data     portainer/portainer-ce:2.9.3
+  121  cd /var/lib/docker/
+  122  ls /var/lib/docker/
+  123  sudo ls /var/lib/docker/
+  124  sudo ls /var/run/docker/
+  125  sudo ls /var/run
+  126  sudo ls /var/lib
+  127  sudo ncdu /var/lib
+  128  sudo ncdu /var/lib/docker
+  129  sudo ncdu /var/run
+  130  sudo nala install docker-compose
+  131  docker status
+  132  docker --help
+  133  docker stats
+  134  cd ~/.docker/lwt
+  135  ls
+  136  docker-compose build lwt
+  137  docker-compose up lwt
+  138  watch upower -i /org/freedesktop/UPower/devices/battery_BAT0
+  139  ls /var
+  140  sudo btrfs subvolume create /var/www
+  141  cd /var
+  142  ls
+  143  cd www
+  144  cd ..
+  145  sudo btrfs subvolume list
+  146  sudo btrfs subvolume list /
+  147  sudo chattr +C /var/www
+  148  lsattr
+  149  ls /media
+  150  cd /media
+  151  sudo touch docker-volume.img
+  152  ls
+  153  sudo chattr +C docker-volume.img
+  154  lsattr
+  155  sudo dd if=/dev/zero of=/media/docker-volume.img bs=4M count=4000
+  156  sudo mkfs.ext4 docker-volume.img
+  157  sudo mkdir /var/lib/docker
+  158  ls /var
+  159  sudo mount -o loop -t ext4 /media/docker-volume.img /var/lib/docker
+  160  ssh 192.168.1.40
+  161  sudo micro /etc/fstab 
+  162  sudo nala remove docker docker-engine docker.io containerd runc
+  163  sudo nala install ca-certificates curl gnupg lsb-release
+  164  sudo mkdir -p /etc/apt/keyrings
+  165  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+  166  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  167  sudo nala update && sudo nala install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+  168  sudo groupadd docker
+  169  sudo usermod -aG docker $USER
+  170  docker volume create portainer_data
+  171  sudo usermod -aG docker $USER
+  172  sudo usermod -aG docker felipe
+  173  docker volume create portainer_data
+  174  sudo systemctl enable docker.service
+  175  udo systemctl enable containerd.service
+  176  sudo systemctl enable containerd.service
+  177  newgrp docker
+  178  sudo blkid
+  179  sudo micro /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.pkla
+  180  sudo rm /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.pkla
+  181  sudo micro /etc/UPower/UPower.conf 
+  182  sudo nala install gufw
+  183  sudo add-apt-repository ppa:fin1ger/cpupower
+  184  sudo nala update
+  185  sudo nala install gnome-shell-extension-cpupower
+  186  lsattr
+  187  lsattr -a
+  188  mkdir docker_temp
+  189  mv .docker/* docker_temp/
+  190  ls ./docker_temp/
+  191  ls .docker/
+  192  sudo chattr +C .docker
+  193  lsattr
+  194  lsattr -a
+  195  mv docker_temp/* .docker
+  196  ls .docker/
+  197  rm docker_temp/
+  198  ls docker_temp/
+  199  rm -r docker_temp
+  200  ls
+  201  $ gnome-extensions enable cpupower@mko-sl.de
+  202  gnome-extensions enable cpupower@mko-sl.de
+  203  sudo nala update
+  204  sudo nala updgrade
+  205  sudo nala upgrade
+  206  nada -h
+  207  nala -h
+  208  sudo nala clean && sudo nala autopurge && sudo nala autoremove
+  209  cd Downloads/
+  210  git clone https://github.com/vinceliuice/Qogir-theme
+  211  cd Qogir-theme/
+  212  ./install.sh -t all -i popos
+  213  sudo ./install.sh -t all -i popos
+  214  ./install.sh -t all -i popos
+  215  sudo ./install.sh -t all -i popos
+  216  sudo nala install sassc
+  217  ./install.sh -t all -i popos
+  218  history
+  219  micro ~/Documents/scripts/instalacao_pop_os.txt 
+  220  wget http://ftp.us.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.8_all.deb -P ~/Downloads/
+  221  sudo dpkg -i ~/Downloads/ttf-mscorefonts-installer_3.8_all.deb
+  222  sudo fc-cache -f -v
+  223  micro Documents/scripts/instalacao_pop_os.txt 
+  224  flatpak install flathub org.onlyoffice.desktopeditors
+  225  fc-match Arial
+  226  sudo nala install ttf-mscorefonts-installer
+  227  sudo fc-cache -f -c
+  228  sudo fc-cache -f -v
+  229  micro Documents/scripts/instalacao_pop_os.txt 
+  230  micro .config/variety/scripts/set_wallpaper 
+  231  sudo nala install variety
+  232  sudo nala install -y variety
+  233  rm ~/.config/variety/Favorites && ln -s ~/Pictures/wallpapers ~/.config/variety/Favorites
+  234  rm -r ~/.config/variety/Favorites && ln -s ~/Pictures/wallpapers ~/.config/variety/Favorites
+  235  sudo micro /etc/UPower/UPower.conf 
+  236  systemctl restart upower
+  237  sudo tailscale status
+  238  tlmgr install beamertheme-saintpetersburg
+  239  which tlmgr
+  240  sudo /usr/bin/tlmgr install beamertheme-saintpetersburg
+  241  cd TEMP/
+  242  mkdir gpt
+  243  cd gpt/
+  244  flatpak update
+  245  sudo nala reinstall variety
+  246  nala -help
+  247  nala -h
+  248  sudo nala remove variety
+  249  sudo nala install variety
+  250  sudo nala install nodejs
+  251  cd Downloads/
+  252  npx bulksplash
+  253  sudo nala install npm
+  254  npm bulksplash --g cathedral -a 20 --o landscape
+  255  npm install bulksplash --g 
+  256  npx bulksplash
+  257  npm install bulksplash --g 
+  258  sudo npm install bulksplash --g 
+  259  bulksplash
+  260  micro ~/Documents/scripts/instalacao_pop_os.txt 
+  261  cd Downloads/
+  262  wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+  263  cd Pictures/wallpapers/
+  264  ls
+  265  bulksplash
+  266  sudo nala install protonvpn
+  267  protonvps
+  268  protonvpn
+  269  sudo nala update && sudo nala install protonvpn
+  270  ls /etc/xdg/autostart/
+  271  cd /etc/xdg/autostart/
+  272  sudo mv io.elementary.appcenter-daemon.desktop io.elementary.appcenter-daemon.desktop.bak
+  273  ls
+  274  flatpak install flathub io.github.hakandundar34coding.system-monitoring-center
+  275  sudo nala update && sudo nala upgrade
+  276  sudo nala install lmsensors
+  277  sudo nala install lm-sensors
+  278  sudo sensors
+  279  sudo nala install ca-certificates git build-essential cmake gcc g++ libkf5config-dev libkf5auth-dev libkf5package-dev libkf5declarative-dev libkf5coreaddons-dev libkf5dbusaddons-dev libkf5kcmutils-dev libkf5i18n-dev libkf5plasma-dev libqt5core5a libqt5widgets5 libqt5gui5 libqt5qml5 extra-cmake-modules qtbase5-dev libkf5notifications-dev qml-module-org-kde-kirigami2 qml-module-qtquick-dialogs qml-module-qtquick-controls2 qml-module-qtquick-layouts qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel gettext
+  280  cd .appImage/
+  281  ls
+  282  git clone https://github.com/Maldela/fancontrol-gui.git
+  283  cd fancontrol-gui
+  284  mkdir build
+  285  cd build
+  286  cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_KCM=on -DBUILD_PLASMOID=on
+  287  make -j
+  288  sudo make install
+  289  fancontrol
+  290  sudo nala install fancontrol
+  291  fancontrol
+  292  sudo sensors-detect
+  293  sudo service kmod start
+  294  sudo pwmconfig
+  295  tailscale status
+  296  sudo tailscale up
+  297  tailscale status
+  298  history | grep parallel
+  299  cd Documents/scripts/notebook/
+  300  ls
+  301  flatpak install flathub org.zotero.Zotero
+  302  flatpak install flathub net.xmind.XMind
+  303  flatpak list
+  304  flatpak update
+  305  ls /boot/efi
+  306  sudo ls /boot/efi
+  307  cd TEMP/
+  308  ls
+  309  dd if=/dev/urandom bs=512 skip=5 count=16 > pop.key
+  310  ls
+  311  cat pop.key 
+  312  ls
+  313  blkid
+  314  cd /media/felipe/Felipe-SD/
+  315  ls
+  316  sudo cryptsetup luksAddKey /dev/sda3 pop.key
+  317  sudo cryptsetup luksDump /dev/sda3
+  318  sudo cryptsetup luksAddKey /dev/sdb1 pop.key
+  319  sudo cryptsetup luksDump /dev/sdb1
+  320  cd /usr/share/initramfs-tools/scripts
+  321  ls
+  322  sudo micro /etc/fstab
+  323  sudo micro /etc/cryptsetup
+  324  sudo micro /etc/crypttab 
+  325  sudo cryptsetup luksDump /dev/sda3
+  326  sudo cryptsetup -v luksKillSlot /dev/sda3 1
+  327  sudo cryptsetup luksDump /dev/sda3
+  328  sudo cryptsetup luksDump /dev/sdb1
+  329  sudo cryptsetup -v luksKillSlot /dev/sdb1 1
+  330  sudo cryptsetup luksDump /dev/sdb1
+  331  sudo cryptsetup -v luksKillSlot /dev/sdb1 2
+  332  sudo cryptsetup luksDump /dev/sdb1
+  333  uuid
+  334  ls
+  335  cd ~/TEMP/
+  336  ls
+  337  dd if=/dev/urandom bs=1 count=256 > 97584921-eb0b-4bde-ab42-e623f0de7cc4.lek
+  338  ls
+  339  lsblk
+  340  cp 97584921-eb0b-4bde-ab42-e623f0de7cc4.lek /media/felipe/fc8e2961-9496-430d-9d38-cd6d518ac4de
+  341  sudo mount /dev/mmcblk0p1 /mnt
+  342  sudo umount /mnt
+  343  ls /mnt
+  344  sudo mount -o rw /dev/mmcblk0p1 /mnt
+  345  ls
+  346  sudo cp 97584921-eb0b-4bde-ab42-e623f0de7cc4.lek /mnt
+  347  sudo cp 97584921-eb0b-4bde-ab42-e623f0de7cc4.lek /mnt/
+  348  lsblk
+  349  sudo hdparm -r0 /dev/mmcblk0
+  350  sudo mount -o remount,rw /dev/mmcblk0
+  351  sudo mount -o rw /dev/mmcblk0p1 /mnt
+  352  sudo mount -o rw /dev/mmcblk0 /mnt
+  353  lsblk
+  354  sudo parted /dev/mmcblk0
+  355  sudo chown $USER:$USER /dev/mmcblk0
+  356  sudo chmod 755 /dev/mmcblk0
+  357  sudo mount -o remount,rw /dev/mmcblk0p1
+  358  sudo mount -o remount,rw /dev/mmcblk0
+  359  sudo mount -o rw /dev/mmcblk0p1
+  360  sudo mount -o rw /dev/mmcblk0p1 /mnt
+  361  sudo mount -o remount,rw /dev/mmcblk0p1 /mnt
+  362  history | grep upower
+  363  watch upower -i /org/freedesktop/UPower/devices/battery_BAT0
+  364  sudo nala install powertop
+  365  powertpo
+  366  powertop
+  367  sudo powertop
+  368  /dev/disk/
+  369  ls /dev/disk/
+  370  ls /dev/disk/by-id/
+  371  lsblk
+  372  cd TEMP/
+  373  cp 97584921-eb0b-4bde-ab42-e623f0de7cc4.lek /media/felipe/SD-chave
+  374  ls /media/felipe/SD-chave/
+  375  sudo cryptsetupt luksDump /dev/sda3
+  376  sudo cryptsetup luksDump /dev/sda3
+  377  sudo cryptsetup luksAddKey /dev/sda3 97584921-eb0b-4bde-ab42-e623f0de7cc4.lek 
+  378  sudo cryptsetup luksAddKey /dev/sdb1 97584921-eb0b-4bde-ab42-e623f0de7cc4.lek 
+  379  sudo micro /etc/crypttab 
+  380  micro luksunlockusb
+  381  chmod 755 luksunlockusb 
+  382  sudo cp luksunlockusb /bin/luksunlockusb
+  383  sudo update-initramfs -u
+  384  dmesg
+  385  cat dmesg
+  386  ls /boot/init*
+  387  sudo ls /boot/efi/
+  388  sudo ls /boot/efi/loader/entries
+  389  sudo cd /boot/efi/loader/entries
+  390  cd /boot/efi/loader/entries
+  391  sudo su
+  392  sudo micro /etc/initramfs-tools/modules 
+  393  sudo micro /etc/crypttab 
+  394  sudo micro /usr/local/sbin/crypto-usb-key.sh
+  395  sudo chmod a+x /usr/local/sbin/crypto-usb-key.sh 
+  396  sudo update-initramfs -u all
+  397  sudo update-initramfs -c -k all
+  398  modprobe -h
+  399  modprobe vfat
+  400  lsmod | grep mmc
+  401  sudo micro /etc/initramfs-tools/modules 
+  402  dmesg
+  403  sudo dmesg
+  404  sudo micro /etc/initramfs-tools/modules 
+  405  sudo micro /etc/crypttab 
+  406  sudo micro /etc/initramfs-tools/modules 
+  407  sudo micro /etc/crypttab 
+  408  sudo cryptsetup luksDump /dev/sda3
+  409  sudo micro /usr/local/sbin/crypto-usb-key.sh
+  410  sudo update-initramfs -u
+  411  sudo micro /usr/local/sbin/crypto-usb-key.sh
+  412  sudo update-initramfs -u
+  413  ls /dev/disk/by-id/
+  414  sudo update-initramfs -u
+  415  sudo micro /usr/local/sbin/crypto-usb-key.sh
+  416  sudo gedit /usr/local/sbin/crypto-usb-key.sh
+  417  sudo update-initramfs -u
+  418  sudo update-initramfs -u
+  419  sudo cp /usr/local/sbin/crypto-usb-key2.sh /usr/local/sbin/crypto-usb-key_A.sh
+  420  sudo cp /usr/local/sbin/crypto-usb-key2.sh /usr/local/sbin/crypto-usb-key_B.sh
+  421  sudo gedit /usr/local/sbin/crypto-usb-key_A.sh
+  422  sudo su
+  423  ls /usr/share/initramfs-tools/scripts/
+  424  ls /usr/share/initramfs-tools/scripts/local-top/
+  425  sudo gedit /usr/local/sbin/crypto-usb-key_B.sh
+  426  sudo micro /etc/crypttab 
+  427  sudo update-initramfs -u
+  428  sudo micro /etc/crypttab 
+  429  sudo update-initramfs -u
+  430  sudo micro /etc/crypttab 
+  431  sudo update-initramfs -u
+  432  sudo micro /etc/crypttab 
+  433  sudo update-initramfs -u
+  434  ls /dev/mapper/
+  435  sudo update-initramfs -u
+  436  sudo micro /etc/crypttab 
+  437  sudo update-initramfs -u
+  438  sudo micro /etc/crypttab
+  439  chmod 755 /usr/local/sbin/crypto-usb-keyA.sh
+  440  sudo chmod 755 /usr/local/sbin/crypto-usb-keyA.sh
+  441  sudo chmod 755 /usr/local/sbin/crypto-usb-keyB.sh
+  442  sudo update-initramfs -u
+  443  chown a+x /usr/local/sbin/crypto-usb-keyB.sh
+  444  history | grep chown
+  445  sudo chmod a+x /usr/local/sbin/crypto-usb-keyB.sh
+  446  sudo chmod a+x /usr/local/sbin/crypto-usb-keyA.sh
+  447  sudo update-initramfs -u
+  448  sudo update-initramfs -k all -c
+  449  sudo update-initramfs -c -k all
+  450  sudo gedit /usr/local/sbin/crypto-usb-keyA.sh
+  451  sudo micro /etc/crypttab 
+  452  sudo micro /usr/local/sbin/crypto-usb-keyA.sh
+  453  sudo micro /etc/crypttab 
+  454  sudo update-initramfs -c -k all
+  455  sudo micro /usr/local/sbin/crypto-usb-keyA.sh
+  456  sudo micro /etc/crypttab 
+  457  sudo update-initramfs -u
+  458  cat /etc/initramfs-tools/hooks/
+  459  ls /etc/initramfs-tools/hooks/
+  460  cp -a /usr/share/initramfs-tools/scripts/local-top/cryptroot /etc/initramfs-tools/scripts/local-top/cryptroot
+  461  sudo cp -a /usr/share/initramfs-tools/scripts/local-top/cryptroot /etc/initramfs-tools/scripts/local-top/cryptroot
+  462  sudo cp -a /usr/share/initramfs-tools/scripts/hooks/cryptroot /etc/initramfs-tools/scripts/hooks/cryptroot
+  463  sudo cp -a /usr/share/initramfs-tools/scripts/local-block/cryptroot /etc/initramfs-tools/scripts/local-block/cryptroot
+  464  sudo cp -a /usr/share/initramfs-tools/hooks/cryptkeyctl /etc/initramfs-tools/scripts/local-block/cryptroot
+  465  sudo micro /etc/crypttab 
+  466  update-initramfs -u all
+  467  update-initramfs -c -k all
+  468  sudo update-initramfs -c -k all
+  469  cat 97584921-eb0b-4bde-ab42-e623f0de7cc4.lek 
+  470  history | grep module
+  471  sudo micro /etc/initramfs-tools/modules 
+  472  sudo micro /usr/local/sbin/crypto-usb-keyA.sh
+  473  ls /usr/local/sbin/
+  474  cd /usr/local/sbin/
+  475  cp crypto-usb-keyA.sh crypto-usb-key.sh
+  476  sudo cp crypto-usb-keyA.sh crypto-usb-key.sh
+  477  sudo chmod a+x crypto-usb-key.sh
+  478  sudo mico crypto-usb-key.sh
+  479  sudo gedit crypto-usb-key.sh
+  480  sudo micro /etc/crypttab 
+  481  sudo update-initramfs -c -k all
+  482  cd /usr/local/sbin/
+  483  sudo gedit crypto-usb-key.sh
+  484  sudo update-initramfs -c -k all
+  485  dmesg
+  486  sudo dmesg
+  487  cat /var/log/* | grep MMC
+  488  sudo cat /var/log/* | grep MMC
+  489  sudo dmesg | grep MMC
+  490  blkid
+  491  busybox -h
+  492  busybox
+  493  busybox basename -h
+  494  ls /sys/block/mmc*
+  495  ls /sys/block/
+  496  ls -d /sys/block/
+  497  ls -d /sys/block/mmc*
+  498  ls -d /sys/block/mmcblk0/mmc*
+  499  busybox basename /sys/block/mmcblk0/mmcblk0p1
+  500  sudo update-initramfs -c -k all
+  501  cd /usr/local/sbin/
+  502  sudo gedit crypto-usb-key.sh
+  503  busybox basename /sys/block/mmcblk0/mmcblk0p1
+  504  echo busybox basename /sys/block/mmcblk0/mmcblk0p1
+  505  sudo update-initramfs -c -k all
+  506  cd /usr/local/sbin/
+  507  sudo gedit crypto-usb-key.sh
+  508  history | grep power
+  509  sudo powertop
+  510  ifconfig
+  511  history | grep sensor
+  512  sudo sensors-setect
+  513  sudo sensors-detect
+  514  lmsensors
+  515  lm-sensors
+  516  sudo sensors
+  517  sudo nala install lm-sensors
+  518  flatpak install flathub org.inkscape.Inkscape
+  519  sudo nala list --upgradable
+  520  nala -h
+  521  sudo nala autoremove
+  522  sudo nala autoclean
+  523  sudo nala clean
+  524  sudo nala history
+  525  sudo powertop
+  526  sudo btrfs device status /dev/sda3
+  527  sudo btrfs device stats /dev/sda3
+  528  sudo btrfs device stats /dev/mapper/data_vda-root 
+  529  sudo btrfs device stats /dev/mapper/data_vdb-root 
+  530  sudo btrfs scrub status /dev/mapper/data_vdb-root 
+  531  sudo btrfs scrub status /dev/mapper/data_vda-root 
+  532  sudo btrfs device stats /dev/mapper/data_vda-root 
+  533  sudo btrfs scrub status /dev/mapper/data_vdb-root 
+  534  sudo btrfs device stats /dev/mapper/data_vdb-root 
+  535  cd /usr/bin
+  536  ls
+  537  ls *.sh
+  538  conda env list
+  539  history | grep jupyter
+  540  conda activate /home/felipe/TEMP/python_chatGPT/.conda
+  541  pip install --upgrade pip
+  542  pip install setuptools
+  543  pip install git+https://github.com/mmabrouk/chatgpt-wrapper
+  544  playwright install firefox
+  545  chatgpt install
+  546  chatgpt
+  547  chatgpt install
+  548  pip isntall openai
+  549  pip install openai
+  550  conda install jupyter-lab
+  551  conda install jupyterlab
+  552  pip install chardet
+  553  pip install openai[embeddings]
+  554  pip install cchardet
+  555  pip remove chardet
+  556  pip uninstall chardet
+  557  pip install autopep8==1.6.0
+  558  certifi==2021.10.8
+  559  charset-normalizer==2.0.7
+  560  click==8.0.3
+  561  et-xmlfile==1.1.0
+  562  Flask==2.0.2
+  563  idna==3.3
+  564  itsdangerous==2.0.1
+  565  Jinja2==3.0.2
+  566  MarkupSafe==2.0.1
+  567  numpy==1.21.3
+  568  openai==0.19.0
+  569  openpyxl==3.0.9
+  570  pandas==1.3.4
+  571  pandas-stubs==1.2.0.35
+  572  pycodestyle==2.8.0
+  573  python-dateutil==2.8.2
+  574  python-dotenv==0.19.2
+  575  pytz==2021.3
+  576  requests==2.26.0
+  577  six==1.16.0
+  578  toml==0.10.2
+  579  tqdm==4.62.3
+  580  urllib3==1.26.7
+  581  Werkzeug==2.0.2
+  582  pip install new_document.txt 
+  583  pip install -r new_document.txt 
+  589  openai api engines.list
+  590  pip install --upgrade openai
+  591  sudo powertop
+  592  flatpak install --user https://flathub.org/repo/appstream/xyz.rescribe.rescribe.flatpakref
+  593  flatpak remove --user https://flathub.org/repo/appstream/xyz.rescribe.rescribe.flatpakref
+  594  flatpak uninstall xyz.rescribe.rescribe
+  595  cd /media/felipe/Elements/
+  596  restic -h
+  597  restic snapshots 
+  598  restic snapshots -r sea-repo/
+  599  restic ls e1d326df -r sea-repo/ 
+  600  restic
+  601  sudo nala isntall restic
+  602  sudo nala install restic
+  603  cd /media/felipe/Elements/
+  604  ls
+  605  cat mount_restic.sh 
+  606  sh mount_restic.sh 
+  607  sudo nala install alacarte
+  608  sudo nala install appimagelauncher
+  609  history | grep docker
+  610  docker
+  611  docker list
+  612  ln -h
+  613  ln --help
+  614  history | grep ln
+  615  ln -s ~/Idiomas/lwt/media ~/.docker/lwt/lwt_html/media
+  616  docker stats
+  617  docker rm lwt_lwt_1 
+  618  docker rm lwt_db_1 
+  619  docker stats
+  620  docker-compose build lwt 
+  621  docker-compose up lwt
+  622  ssh 192.168.1.40
+  623  history | grep youtube
+  624  history | grep y
+  625  history | grep nala
+  626  pip install yp-dlp
+  627  pip install yt-dlp
+  628  yt-dlp https://www.youtube.com/watch?v=tZRD0BwqS48
+  629  history | grep btrfs
+  630  sudo btrfs scrub status /dev/mapper/data_vda-root
+  631  sudo btrfs scrub status /dev/mapper/data_vdb-root
+  632  sudo btrfs device status /dev/mapper/data_vda-root
+  633  sudo btrfs device stats /dev/mapper/data_vda-root
+  634  sudo btrfs device stats /dev/mapper/data_vdb-root
+  635  sudo nala install ibus ibus-mozc mozc-utils-gui
+  636  ibus-setup
+  637  ibus-setup
+  638  cd Videos/
+  639  ls
+  640  yt-dlp https://www.youtube.com/watch?v=tZRD0BwqS48
+  641  ls
+  642  ibus-setup
+  643  yt-dlp https://www.youtube.com/watch?v=tZRD0BwqS48
+  644  yt-dlp https://www.youtube.com/watch?v=mBI8Tf40-3U
+  645  yt-dlp --help
+  646  yt-dlp -N 5 https://www.youtube.com/watch?v=mBI8Tf40-3U
+  647  history | grep upower
+  648  history | grep UPower
+  649  sudo micro /etc/UPower/UPower.conf 
+  650  sudo btrfs scrub status /dev/mapper/data_vda-root
+  651  sudo btrfs device status /dev/mapper/data_vda-root
+  652  sudo btrfs device stats /dev/mapper/data_vda-root
+  653  sudo btrfs device stats /dev/mapper/data_vdb-root
+  654  sudo nala install transmission
+  655  tailcale status
+  656  tailcale stats
+  657  tailscale stats
+  658  tailscale status
+  659  tailscale status
+  660  history | grep unsplash
+  661  history | grep bulk
+  662  cd Pictures/
+  663  ls
+  664  cd wallpapers/
+  665  ls
+  666  bulksplash
+  667  dmesg
+  668  sudo dmesg
+  669  cd TEMP/
+  670  ls
+  671  mkdrid catecismo
+  672  mkdir catecismo
+  673  cd catecismo/
+  674  httrack https://www.vatican.va/archive/cathechism_po/index_new/prima-pagina-cic_po.html -a -v -I0
+  675  sudo nala install httrack
+  676  httrack https://www.vatican.va/archive/cathechism_po/index_new/prima-pagina-cic_po.html -a -v -I0
+  677  sudo powertop
+  678  pandoc
+  679  ifconfig
+  680  ip -a
+  681  ip a
+  682  sudo tailscale status
+  683  docker
+  684  docker stats
+  685  sudo nautilus
+  686  nano /etc/fstab 
+  687  history | grep mount
+  688  sudo mount -o defaults,ssd,noatime,space_cache,commit=120,compress-zstd,subvolid=5 /dev/data_vda /mnt
+  689  sudo mount -av
+  690  mkdir /btrfs_pool
+  691  sudo mkdir /btrfs_pool
+  692  ls /
+  693  cat /etc/fstab 
+  694  micro /etc/fstab 
+  695  sudo micro /etc/fstab 
+  696  sudo watch btrfs device stats /dev/mapper/data_vdb-root 
+  697  history | grep btrfs
+  698  sudo watch btrfs scrup status /dev/mapper/data_vda-root
+  699  sudo watch btrfs scrub status /dev/mapper/data_vda-root
+  700  sudo watch btrfs device stats /dev/mapper/data_vda-root
+  701  sudo watch btrfs device stats /dev/mapper/data_vdb-root 
+  702  sudo nala install fonts-ipafont-mincho
+  703  sudo watch btrfs device stats /dev/mapper/data_vda-root
+  704  sudo watch btrfs device stats /dev/mapper/data_vdb-root 
+  705  sudo watch btrfs device stats /dev/mapper/data_vda-root
+  706  sudo nala install sumatrapdf
+  707  sudo nala install sumatra-pdf
+  708  sudo nala install sumatra
+  709  sudo nala remove sumatra
+  710  sudo nala history
+  711  nala help
+  712  nala history help
+  713  sudo nala history undo 34
+  714  sudo nala install mupdf
+  715  sudo nala install playonlinux winbind 
+  716  sudo watch btrfs device stats /dev/mapper/data_vda-root
+  717  sudo watch btrfs device stats /dev/mapper/data_vdb-root
+  718  cd Downloads/
+  719  unzip -p www.mysoftwarefree.com ./
+  720  history | grep unzip
+  721  history | grep zip
+  722  pip install dtrx
+  723  dtrx Microsoft\ Office\ 2013\ -\ www.MySoftwareFree.com.7z 
+  724  sudo nala install playonlinux winbind 
+  725  brewtarget
+  726  history | grep para
+  727  echo cerv_urls | xargs -n 1 -P 10 wget -q
+  728  echo $cerv_urls | xargs -n 1 -P 10 wget -q
+  729  echo cerv_urls.txt | xargs -n 1 -P 10 wget -q
+  730  sudo apt install parallels
+  731  sudo apt install parallel
+  732  cat cerv_urls.txt | parallel --gnu "wget {}"
+  733  conda env list
+  734  cat beerxml_list.txt | parallel --gnu "wget {}"
+  735  conda activate /home/felipe/TEMP/cerv-recipe/.conda
+  736  pip install pybeerxml
+  737  python
+  738  conda install ipykernel --update-depsp --force-install
+  739  conda install ipykernel --update-deps --force-install
+  740  conda install ipykernel --update-deps --force-reinstall
+  741  conda install -p /home/felipe/TEMP/cerv-recipe/.conda ipykernel --update-deps --force-reinstall
+  742  pip install ipykernel
+  743  conda activate /home/felipe/TEMP/cerv-recipe/.conda
+  744  pip install pandas
+  745  conda activate /home/felipe/TEMP/cerv-recipe/.conda
+  746  pip install matplotlib sklearn pyDOE scipy pylab seaborn
+  747  pip install matplotlib
+  748  pip install sklearn
+  749  pip install pyDOE
+  750  pip install pyla
+  751  pip install pylab
+  752  pip install seaborn
+  753  pip install scikit-learn
+  754  pip install xlwt
+  755  sudo nala install teams-for-linux
+  756  sudo snap install teams
+  757  flatpak install flathub com.github.IsmaelMartinez.teams_for_linux
+  758  history | grep ssh
+  759  ssh 100.82.172.52
+  760  sudo tailscale up
+  761  sudo tailscale status
+  762  ssh 100.82.172.52
+  763  sudo tailscale status
+  764  ssh 100.82.172.52
+  765  sudo tailscale status
+  766  ssh 100.82.172.52
+  767  ssh simone@100.82.172.52
+  768  ssh 100.82.172.52
+  769  pt-get install pandoc pandoc-citeproc texlive
+  770  sudo nala install pandoc pandoc-citeproc texlive
+  771  cd Documents/pessoais/curriculos/latex/resume4/aux/
+  772  ls
+  773  cd ..
+  774  ls
+  775  pandoc -s resume.tex -o temp.docx
+  776  tailscale status
+  777  ssh 100.82.172.52
+  778  conda list
+  779  conda env list
+  780  python --version
+  781  conda env list
+  782  conda activate /home/felipe/TEMP/cerv-recipe/.conda
+  783  pip install pandas
+  784  python
+  785  tailscale status
+  786  ssh 100.82.172.52
+  787  tailscale status
+  788  ssh 100.82.172.52
+  789  nada search pdfreflow
+  790  nala search pdfreflow
+  791  cd Downloads/pdfreflow-0.8.6/
+  792  ./configure 
+  793  make
+  794  cd ~/Livros/avulsos/igreja/
+  795  ls
+  796  pdftohtml -xml CONQUISTA-DAS-VIRTUDES.pdf 
+  797  pdfreflow
+  798  pdfreflow CONQUISTA-DAS-VIRTUDES.xml
+  799  ~/Downloads/pdfreflow-0.8.6/src/pdfreflow CONQUISTA-DAS-VIRTUDES.xml
+  800  ~/Downloads/pdfreflow-0.8.6/src/pdfreflow --ragright CONQUISTA-DAS-VIRTUDES.xml
+  801  ssh 100.82.172.52
+  802  ssms
+  803  sudo nala install dbeaver
+  804  flatpak install flathub io.dbeaver.DBeaverCommunity
+  805  sudo nala install pulseaudio
+  806  sudo nala install pavucontrol
+  807  sudo powertop
+  808  flatpak install flathub io.dbeaver.DBeaverCommunity
+  809  conda activate /home/felipe/Cursos/CCDD/.conda
+  810  pip install numpy pandas pyarrow
+  811  sudo watch btrfs device stats /dev/mapper/data_vdb-root
+  812  sudo watch btrfs device stats /dev/mapper/data_vda-root
+  813  ssh 100.82.172.52
+  814  ip -a
+  815  ip a
+  816  tailscale status
+  817  ssh 100.82.172.52
+  818  ssh 100.82.172.52
+  819  sudo nala install gnome-clocks
+  820  history | grep watch
+  821  watch upower -i /org/freedesktop/UPower/devices/battery_BAT0
+  822  ssh 100.82.172.52
+  823  history | grep yt
+  824  cd Music/
+  825  ls
+  826  mkdir "cancoes galego portugues"
+  827  cd cancoes\ galego\ portugues/
+  828  yt-dlp -h
+  829  yt-dlp -N 5 https://www.youtube.com/playlist?list=PLnXrC2Q5ODrr9VfRGyC9q7yFWQZOGUAy4]
+  830  yt-dlp -N 5 https://www.youtube.com/playlist?list=PLnXrC2Q5ODrr9VfRGyC9q7yFWQZOGUAy4
+  831  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 https://www.youtube.com/playlist?list=PLnXrC2Q5ODrr9VfRGyC9q7yFWQZOGUAy4
+  832  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 https://www.youtube.com/playlist?list=PLXqdrHz6Q7SXeCcAnJdpAumY-zCJRtyZB
+  833  cd ../cantigas\ do\ camino/
+  834  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 https://www.youtube.com/watch?v=mZ78K5u4EYA
+  835  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 https://www.youtube.com/watch?v=_jyK5egEQMI&list=OLAK5uy_nhl_aJ3ZoIm__b-lcYNVR_4K5LGAT11Wg
+  836  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 https://www.youtube.com/playlist?list=OLAK5uy_nhl_aJ3ZoIm__b-lcYNVR_4K5LGAT11Wg
+  837  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 --download-archive https://www.youtube.com/playlist?list=OLAK5uy_nhl_aJ3ZoIm__b-lcYNVR_4K5LGAT11Wg
+  838  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 --download-archive URL https://www.youtube.com/playlist?list=OLAK5uy_nhl_aJ3ZoIm__b-lcYNVR_4K5LGAT11Wg
+  839  yt-dlp -N 5 -f 'ba' -x --audio-format mp3 --download-archive URL https://www.youtube.com/watch?v=rtQIfe1kyJc
+  840  flatpack list
+  841  flatpak list
+  842  flatpak update
+  843  grep "sleep" .
+  844  grep "sleep" ./
+  845  grep "sleep" *.py
+  846  grep "sleep" service/*.py
+  847  grep "30" service/*.py
+  848  grep "30" *.py
+  849  grep "sleep" gui/*.py
+  850  grep -R "sleep" *.py
+  851  grep -r "sleep" *.py
+  852  grep -r "sleep" ./
+  853  conda activate language
+  854  pip install spacy
+  855  python -m spacy download ja_core_news_sm
+  856  wget https://d1.islamhouse.com/data/ar/ih_books/chain_01/Lessons_in_Arabic_Language/ar_02_Lessons_in_Arabic_Language.pdf
+  857  wget https://d1.islamhouse.com/data/ar/ih_books/chain_01/Lessons_in_Arabic_Language/ar_03_Lessons_in_Arabic_Language.pdf
+  858  cd Downloads/
+  859  wget https://d1.islamhouse.com/data/ar/ih_books/chain_01/Lessons_in_Arabic_Language/ar_01_Lessons_in_Arabic_Language.pdf
+  860  wget http://62.182.86.140/main/2237000/02a21fd49e1fdae919cdb06e2e3481b0/%28Palgrave%20Master%20Series%20%28Languages%29%29%20Jane%20Wightwick%2C%20Mahmoud%20Gaafar%20-%20Mastering%20Arabic%201-Palgrave%20%282014%29.pdf
+  861  history | grep ocr
+  862  sudo nala install xournal
+  863  sudo nala install xournalpp
+  864  tailscale status
+  865  sudo tailscale up
+  866  tailscale status
+  867  ip -a
+  868  ip a
+  869  ifconfig
+  870  sudo snap install blue-recorder
+  871  flatpak install flathub sa.sy.bluerecorder
+  872  wget https://musescore.com/static/musescore/scoredata/g/3191508c10bcc7792f73cfd6105f55b496df3b86/score_0.svg
+  873  sudo nala install fuse2
+  874  sudo nala install libfuse2
+  875  chmod a+x LibreScore.AppImage 
+  876  flatpak install flathub org.musescore.MuseScore
+  877  cd Downloads/
+  878  wget https://musescore.com/static/musescore/scoredata/g/847881e037bfe93bb3c18c5f95761f6d4bfe944c/score_0.png
+  879  tailscale
+  880  tailscale status
+  881  flatpak install flathub org.openshot.OpenShot
+  882  ifconfig
+  883  cd /home/felipe
+  884  docker run --rm -it -v     "/home/felipe/Cursos/coursera_down:/courses"     courseradl/courseradl -u "160027951@aluno.unb.br" -p "felipe24121998" learn-chinese-mandarin
+  885  docker run --rm -it -v     "/home/felipe/Cursos/coursera_down:/courses"     courseradl/courseradl -u "160027951@aluno.unb.br" -p "felipe24121998" -ca 16wpXK1hAQcjT203oFyN0BV4tD_maweSL-FpsQDhokqlJt0Q9UxZDSBq0BJUk3ympSMtfJOxG_HUOOnMDAw9sg.ja2aJroeJeT23151tosifQ.dkq3mqfL9YzaOqiNKk7KAblLbMLbPUEby_nxSiEtra7Z9ObWESae0Qoj8wo1vevfVFAerpmvvg84Y7qOWbAC4RCwglTOFjV8IL2_W3zqJhqyJQgIA2oJf_yg9HD52ayYYXmWz32iYuWpS8qa76cnboZ_Z2LeLuUrdq8R3VIbBsdQ4Xv4nC2yOfzppPKOuBgBgnlZtB5VaLQA6ft40tI4hAyaceDveUokEGroLtnZbgErqenfcReUahTD0wrGcpWPN_YLd08y2NSdoxXI2aN-zdzhYGOCWAwoJFxdydiW525GTtrAm1jXvc2L3vRJ3CxipuGL6bXaZDcSYSVKNlCIHY0MKBGWfn0TYYpj5hvdCt8pQX0X6X0Cyy2ppidEdh_-8u28GW-YeqV9RP3_9B3m7eEPNzpDYquVqdHdVusmimW2lsOtW4vT_J-bySWdr_G8 learn-chinese-mandarin
+  886  docker run --rm -it -v     "/home/felipe/Cursos/coursera_down:/courses"     courseradl/courseradl -u "160027951@aluno.unb.br" -p "felipe24121998" -ca ~/ca.txt learn-chinese-mandarin
+  887  docker run --rm -it -v     "/home/felipe/Cursos/coursera_down:/courses"     courseradl/courseradl -u "160027951@aluno.unb.br" -p "felipe24121998" -ca '16wpXK1hAQcjT203oFyN0BV4tD_maweSL-FpsQDhokqlJt0Q9UxZDSBq0BJUk3ympSMtfJOxG_HUOOnMDAw9sg.ja2aJroeJeT23151tosifQ.dkq3mqfL9YzaOqiNKk7KAblLbMLbPUEby_nxSiEtra7Z9ObWESae0Qoj8wo1vevfVFAerpmvvg84Y7qOWbAC4RCwglTOFjV8IL2_W3zqJhqyJQgIA2oJf_yg9HD52ayYYXmWz32iYuWpS8qa76cnboZ_Z2LeLuUrdq8R3VIbBsdQ4Xv4nC2yOfzppPKOuBgBgnlZtB5VaLQA6ft40tI4hAyaceDveUokEGroLtnZbgErqenfcReUahTD0wrGcpWPN_YLd08y2NSdoxXI2aN-zdzhYGOCWAwoJFxdydiW525GTtrAm1jXvc2L3vRJ3CxipuGL6bXaZDcSYSVKNlCIHY0MKBGWfn0TYYpj5hvdCt8pQX0X6X0Cyy2ppidEdh_-8u28GW-YeqV9RP3_9B3m7eEPNzpDYquVqdHdVusmimW2lsOtW4vT_J-bySWdr_G8' learn-chinese-mandarin
+  888  conda list
+  889  conda env list
+  890  conda activate language
+  891  pip install coursera-dl
+  892  coursera-dl learn-chinese-mandarin
+  893  git clone https://github.com/raffaem/cs-dlp
+  894  pip install --user ./cs-dlp/.
+  895  cs-dlp --cauth-auto chrome learn-chinese-mandarin
+  896  cs-dlp --cauth-auto chrome learn-chinese
+  897  cd TEMP/
+  898  ls
+  899  git clone https://github.com/b5i/apple-playlist-downloader
+  900  cd apple-playlist-downloader/
+  901  cd ..
+  902  npm i -g apple-playlist-downloader
+  903  git clone https://github.com/Shubhamrawat5/apple-playlist-downloader.git
+  904  rm -r apple-playlist-downloader/
+  905  rm -r apple-playlist-downloader
+  906  ls
+  907  sudo rm -r apple-playlist-downloader
+  908  git clone https://github.com/Shubhamrawat5/apple-playlist-downloader.git
+  909  cd apple-playlist-downloader/
+  910  npm install
+  911  npm start
+  912  lame
+  913  sudo nala install lame
+  914  gsettings set org.gnome.desktop.remote-desktop.rdp screen-share-mode extend
+  915  ifconfig
+  916  sudo tailscale up
+  917  sudo tailscale status
+  918  ping 192.168.1.33
+  919  conda env list
+  920  conda ~/felipe/TEMP/cerv-recipe/.conda activate
+  921  conda -h
+  922  conda env -h
+  923  conda activate
+  924  conda language activate
+  925  conda
+  926  conda activate language
+  927  conda activate ~/felipe/TEMP/cerv-recipe/.conda
+  928  conda activate ~/felipe/TEMP/cerv-recipe/
+  929  conda activate ~/TEMP/cerv-recipe/.conda/
+  930  python ./download_raibow.py 
+  931  pip install requests beautifulsoup4
+  932  python ./download_raibow.py 
+  933  python download_raibow.py 
+  934  python
+  935  python download_raibow.py 
+  936  flatpak install flathub io.dbeaver.DBeaverCommunity
+  937  sudo nala install winbind
+  938  curl -F 'files[]=@Plotter_License.mde' https://www.rebasedata.com/api/v1/convert?outputFormat=csv -o output.zip
+  939  curl -F 'files[]=@Plotter_License.mde' https://www.rebasedata.com/api/v1/convert?outputFormat=mdb -o output.zip
+  940  unzip -h
+  941  unzip output.zip 
+  942  unzip output.zip
+  943  unzip output
+  944  unzip output.zip
+  945  curl -F 'files[]=@Plotter_License.mde' https://www.rebasedata.com/api/v1/convert?outputFormat=mdb -o output.mdb
+  946  ifconfig
+  947  sudo tailscale status
+  948  sudo apt install synaptic
+  949  sudo apt update
+  950  sudo apt --upgrade
+  951  sudo apt upgrade
+  952  sudo aptp --fux-broken
+  953  sudo aptp --fix-broken
+  954  sudo apt --fix-broken
+  955  sudo apt --fix-broken install
+  956  sudo apt upgrade
+  957  python ./download_raibow.py 
+  958  conda activate languages
+  959  conda activate language
+  960  python ./download_raibow.py 
+  961  sudo nala install gnucash
+  962  sudo nala remove gnucash
+  963  history | grep lwt
+  964  cd .docker
+  965  git clone --depth 1 -b main https://github.com/bigcapitalhq/bigcapital.git && cd ./bigcapital
+  966  ls
+  967  cp .env.example .env && nano .env
+  968  docker-compose --file docker-compose.prod.yml up -d
+  969  nano docker-compose.prod.yml 
+  970  nano docker-compose.prod.yml 
+  971  docker-compose --file docker-compose.prod.yml up -d --verbose
+  972  docker-compose --file docker-compose.prod.yml up -d
+  973  ls /var/
+  974  cd .docker
+  975  ls
+  976  git clone https://github.com/akaunting/docker
+  977  ls
+  978  cd docker/
+  979  ls
+  980  cd ..
+  981  mv -r ./docker ./akauting
+  982  mv ./docker ./akauting
+  983  ls
+  984  cd akauting/
+  985  ls
+  986  cp env/db.env.example env/db.env
+  987  micro env/db.env
+  988  cp env/run.env.example env/run.env
+  989  micro env/run.env
+  990  AKAUNTING_SETUP=true docker-compose up -d
+  991  docker-compose down
+  992  micro env/db.env
+  993  docker-compose up -d
+  994  docker-compose down
+  995  docker-compose up -d
+  996  docker-compose -f fpm-docker-compose.yml -f fpm-alpine-docker-compose.yml up --build
+  997  docker-compose up -d
+  998  docker 
+  999  docker ps
+ 1000  docker-compose down
+ 1001  docker ps
+ 1002  docker-compose -h
+ 1003  docker-compose ps
+ 1004  AKAUNTING_SETUP=true docker-compose up -d
+ 1005  docker-compose down
+ 1006  docker-compose up --build
+ 1007  cd ..
+ 1008  rm -r akauting/
+ 1009  ls
+ 1010  sudo rm -r akauting/
+ 1011  ls
+ 1012  git clone https://github.com/akaunting/docker
+ 1013  cd docker
+ 1014  cp env/db.env.example env/db.env
+ 1015  vi env/db.env # and set things
+ 1016  cp env/run.env.example env/run.env
+ 1017  vi env/run.env # and set things
+ 1018  AKAUNTING_SETUP=true docker-compose up -d
+ 1019  cd ..
+ 1020  sudo rm -r docker/
+ 1021  çs
+ 1022  ls
+ 1023  git clone https://github.com/akaunting/docker
+ 1024  cd akaunting/
+ 1025  cp env/db.env.example env/db.env
+ 1026  cp env/run.env.example env/run.env
+ 1027  AKAUNTING_SETUP=true docker-compose up -d
+ 1028  bash ./kuralab_akauting.sh 
+ 1029  sudo rm -r config
+ 1030  sudo rm -r logs
+ 1031  sudo rm -r mysql
+ 1032  bash ./kuralab_akauting.sh 
+ 1033  sudo rm -r mysql
+ 1034  sudo rm -r config
+ 1035  bash ./kuralab_akauting.sh 
+ 1036  sudo rm -r config
+ 1037  sudo rm -r mysql
+ 1038  sudo rm -r config
+ 1039  sudo rm -r mysql
+ 1040  conda env list
+ 1041  conda activate finance
+ 1042  pip install beancount fava
+ 1043  beancount
+ 1044  ls
+ 1045  where beancount
+ 1046  where fava
+ 1047  echo $beancount
+ 1048  $beancount
+ 1049  beancouont
+ 1050  beancount
+ 1051  fava
+ 1052  bean
+ 1053  bean-check
+ 1054  bean-web
+ 1055  cd .docker/bean/ 
+ 1056  bean-web example.beancount 
+ 1057  fava example.beancount 
+ 1058  echo $path
+ 1059  echo $PATH
+ 1060  conda activate language
+ 1061  echo $PATH
+ 1062  conda activate finance
+ 1063  echo $PATH
+ 1064  bean-web main.bean
+ 1065  conda activate finance
+ 1066  bean-web main.bean
+ 1067  conda activate finance
+ 1068  bean-web main.bean
+ 1069  conda activate finance
+ 1070  /home/felipe/.miniconda3/envs/finance/bin/python /home/felipe/.docker/bean/import_ofx.py
+ 1071  conda activate finance
+ 1072  python import_ofx.py 
+ 1073  bean-check main.bean 
+ 1074  python import_ofx.py 
+ 1075  bean-check main.bean 
+ 1076  python import_ofx.py 
+ 1077  bean-check main.bean 
+ 1078  python import_ofx.py 
+ 1079  n
+ 1080  python import_ofx.py 
+ 1081  python
+ 1082  conda activate finance
+ 1083  python run.py 
+ 1084  bean-format
+ 1085  bean-format -h
+ 1086  bean-report journal.beancount 
+ 1087  bean-web
+ 1088  bean-web journal.beancount 
+ 1089  conda activate finance
+ 1090  pip install beancount-import
+ 1091  python data/import_ofx.py 
+ 1092  python import_ofx.py 
+ 1093  conda activate finance
+ 1094  python import_ofx.py 
+ 1095  history | grep btrfs
+ 1096  sudo btrfs subvolume list /
+ 1097  ls /
+ 1098  history | grep nano
+ 1099  nano /etc/fstab
+ 1100  history | grep tesseract
+ 1101  history | grep ocr
+ 1102  nala search tesseract-ocr
+ 1103  sudo nala install tesseract-ocr-jpn tesseract-ocr-jpn-vert ocrmypdpf
+ 1104  sudo nala install tesseract-ocr-jpn tesseract-ocr-jpn-vert ocrmypdf
+ 1105  cd Idiomas/japonês/livros/tadoku/pdfs/2/
+ 1106  ls
+ 1107  ocrmypdf -l jpn-vert 2-10\ saigo\ no\ ha.pdf teste.pdf
+ 1108  ocrmypdf -l 
+ 1109  ocrmypdf -l jpn_vert 2-10\ saigo\ no\ ha.pdf teste.pdf
+ 1110  ocrmypdf -h
+ 1111  ocrmypdf -l jpn_vert --tesseract-oem 2 2-10\ saigo\ no\ ha.pdf teste.pdf
+ 1112  ocrmypdf -l jpn --tesseract-oem 2 2-10\ saigo\ no\ ha.pdf teste.pdf
+ 1113  history grep crypt
+ 1114  history | grep crypt
+ 1115  history > historyDEC23.txt

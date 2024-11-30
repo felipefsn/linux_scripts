@@ -1,0 +1,162 @@
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt autoremove --purge
+sudo apt autoclean
+flatpak update
+
+##
+## timeshift
+##
+
+sudo apt install timeshift
+sudo apt install git make
+git clone https://github.com/wmutschl/timeshift-autosnap-apt.git /home/felipe/timeshift-autosnap-apt
+cd timeshift-autosnap-apt
+sudo make install
+sudo nano /etc/timeshift-autosnap-apt.conf
+sudo timeshift-autosnap-apt
+
+
+
+##
+## chrome
+##
+
+sudo apt install libu2f-udev
+wget - c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ~/Downloads
+sudo dpkg -i ~/Downloads/*.deb
+
+
+
+##
+## tailscales
+##
+
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+sudo apt update
+sudo apt install tailscale
+sudo tailscale up
+
+
+
+##
+## nomachine
+##
+
+
+
+##
+## seafile
+##
+
+https://www.seafile.com/en/download/
+
+
+
+##
+## extensions and themes
+##
+
+https://extensions.gnome.org/extension/779/clipboard-indicator/
+https://extensions.gnome.org/extension/1460/vitals/
+https://extensions.gnome.org/extension/1319/gsconnect/
+https://extensions.gnome.org/extension/906/sound-output-device-chooser/
+
+sudo apt install gtk2-engines-murrine gtk2-engines-pixbuf breeze-cursor-theme sassc
+cd ~/Downloads
+git clone https://github.com/vinceliuice/Matcha-gtk-theme.git && ./Matcha-gtk-theme/install.sh
+git clone https://github.com/vinceliuice/Qogir-icon-theme && ./Qogir-icon-theme/install.sh
+git clone https://github.com/vinceliuice/Qogir-theme && ./Qogir-theme/install.sh -t all -i popos
+
+
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub org.gtk.Gtk3theme.Qogir
+flatpak install flathub org.gtk.Gtk3theme.Matcha-sea
+sudo flatpak override --filesystem=~/.themes
+
+
+##
+## Python
+##
+
+https://docs.conda.io/en/latest/miniconda.html#linux-installers
+conda env create -f XXX.yml
+
+
+##
+##   Programas
+##
+
+# Nala
+
+echo "deb [arch=amd64,arm64,armhf] http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
+wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
+sudo apt update && sudo apt install nala
+
+sudo add-apt-repository multiverse #fonts
+sudo apt update
+
+sudo apt install gnome-sushi gnome-tweaks nautilus-admin openssh-server synaptic ubuntu-restricted-extras iotop htop ncdu foliate micro ttf-mscorefonts-installer msttcorefonts gsfonts-x11 gufw variety rclone rclone-browser
+
+sudo apt install -y libavcodec-extra libdvd-pkg; sudo dpkg-reconfigure libdvd-pkg
+rm -r ~/.config/variety/Favorites && ln -s ~/Pictures/wallpapers ~/.config/variety/Favorites
+# https://github.com/varietywalls/variety/issues/505
+
+flatpak install flathub com.github.donadigo.appeditor
+flatpak install flathub com.calibre_ebook.calibre
+flatpak install flathub com.spotify.Client
+flatpak install flathub org.videolan.VLC
+flatpak install flathub com.obsproject.Studio
+flatpak install flathub org.gimp.GIMP
+flatpak install flathub com.discordapp.Discord
+flatpak install flathub org.musescore.MuseScore
+flatpak install flathub org.onlyoffice.desktopeditors
+flatpak install flathub com.getmailspring.Mailspring
+
+sudo apt install code texlive-full
+
+git clone https://github.com/iamdh4/ttf-wps-fonts.git ~/Downloads && sudo ~/Downloads/ttf-wps-fonts/install.sh
+wget http://ftp.us.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.8_all.deb -P ~/Downloads/
+sudo dpkg -i ~/Downloads/ttf-mscorefonts-installer_3.8_all.deb
+sudo fc-cache -f -v
+
+##
+## impressora
+##
+
+sudo apt install lsb printer-driver-cups-pdf boomaga
+
+
+##
+## SDcard
+##
+
+https://tqdev.com/2022-luks-with-usb-unlock
+https://wejn.org/how-to-make-passwordless-cryptsetup.html
+
+
+http://download.ebz.epson.net/dsc/search/01/search/searchModule
+
+
+##
+## bateria
+##
+
+/etc/UPower/UPower.conf
+
+UsePercentageForPolicy=true
+PercentageLow=40
+PercentageCritical=30
+PercentageAction=20
+CriticalPowerAction=Hibernate
+
+
+
+##
+## APP IMAGES
+##
+
+chatgpt
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash

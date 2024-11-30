@@ -1,0 +1,20 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system>  <mount point>  <type>  <options>  <dump>  <pass>
+PARTUUID=b7e0ec15-a48a-4ced-a7af-d7b6dd884aa0	/boot/efi	vfat	umask=0077	0  0
+PARTUUID=b6960705-68f0-4d81-980b-6ee4e3ad5756	/recovery	vfat	umask=0077	0  0
+
+## SSD 480Gb
+UUID=7c64c6ba-12c8-4c4e-9349-10dcc4931a0b	/btrfs_pool		btrfs	defaults,ssd,noatime,space_cache,commit=120,compress-zstd,subvolid=5		0  0
+UUID=7c64c6ba-12c8-4c4e-9349-10dcc4931a0b	/			btrfs	defaults,ssd,noatime,space_cache,commit=120,compress=zstd,subvol=@		0  0
+UUID=7c64c6ba-12c8-4c4e-9349-10dcc4931a0b       /home			btrfs   defaults,ssd,noatime,space_cache,commit=120,compress=zstd,subvol=@home		0  0
+UUID=7c64c6ba-12c8-4c4e-9349-10dcc4931a0b       /home/felipe/Docker	btrfs   defaults,ssd,noatime,space_cache,commit=120,compress=zstd,subvol=@docker	0  0
+UUID=7c64c6ba-12c8-4c4e-9349-10dcc4931a0b       /swap			btrfs   defaults,subvol=@swap,compress=no	0  0
+/swap/swapfile					none			swap	defaults				0  0
+
+## Docker folder
+/media/docker-volume.img			/var/lib/docker		ext4	defaults,discard,x-systemd.after=/	0  0
